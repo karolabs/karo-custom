@@ -43,3 +43,22 @@ karo_compose_stack_groups:
         ${DRIVE_MOUNT}/data/torrents/movies \
         ${DRIVE_MOUNT}/data/torrents/series
     ```
+
+## Misc
+
+??? tip "Manually deleting media"
+
+    1.  Delete media in Sonarr/Radarr
+
+        - Select 'Delete episode/movie files'
+          (removes arr app hardlinked files)
+
+    2.  Delete media in qui
+
+        - Select 'Also delete files from disk'
+          (removes torrent and original files)
+
+    !!! info
+
+        Jellyfin will automatically remove media from its library
+        after being deleted from Sonarr/Radarr.
