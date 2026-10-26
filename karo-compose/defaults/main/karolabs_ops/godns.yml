@@ -8,8 +8,7 @@ karolabs_ops_godns_enabled: false
 
 karolabs_ops_godns_stack_defaults:
   godns:
-    image: docker.io/timothyye/godns # -8<- [end:x]
-    version: v3.4.4@sha256:98b7cf18e8e90a0b7ea4cea02be60733a5cbe64274a7ecac1bb2be535ce0358a # -8<- [end:x]
+    image: "{{ karolabs_godns_image }}"
     subdomain: dyndns
     debug_info_enabled: false
     secrets:

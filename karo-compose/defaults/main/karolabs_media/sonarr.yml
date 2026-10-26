@@ -8,8 +8,7 @@ karolabs_media_sonarr_enabled: false
 
 karolabs_media_sonarr_stack_defaults:
   sonarr:
-    image: docker.io/linuxserver/sonarr # -8<- [end:x]
-    version: 4.0.20.3014-ls325@sha256:a5c1a5fecbef946927ab90ad68df319ac5fe644057e5fc18cd993f01ac07b2b2 # -8<- [end:x]
+    image: "{{ karolabs_sonarr_image }}"
     domain: "sonarr.{{ karo_compose_root_domain }}"
     forward_auth_enabled: true
     data_path: "" # e.g. /media/drive1/data

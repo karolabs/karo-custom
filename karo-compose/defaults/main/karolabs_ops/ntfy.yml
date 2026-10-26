@@ -8,8 +8,7 @@ karolabs_ops_ntfy_enabled: false
 
 karolabs_ops_ntfy_stack_defaults:
   ntfy:
-    image: docker.io/binwiederhier/ntfy # -8<- [end:x]
-    version: v2.28.0@sha256:6ef4b819f722fccdc036af611c4774cfdc2de821ab74fdd48bbf4c9d6f8973da # -8<- [end:x]
+    image: "{{ karolabs_ntfy_image }}"
     domain: "ntfy.{{ karo_compose_root_domain }}"
     log_level: info # trace, debug, info, warn, error
     auth_users: "" # https://docs.ntfy.sh/config/#users-via-the-config

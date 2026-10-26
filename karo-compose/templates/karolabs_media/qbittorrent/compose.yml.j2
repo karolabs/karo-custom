@@ -8,7 +8,7 @@ name: qbittorrent
 services:
 
   qbittorrent:
-    image: {{ stack_vars.qbittorrent.image }}:{{ stack_vars.qbittorrent.version }}
+    image: {{ stack_vars.qbittorrent.image }}
     container_name: qbittorrent
     restart: {{ karo_compose_restart_policy }}
     stop_grace_period: 30m
@@ -39,7 +39,7 @@ services:
       - QBT_WEBUI_PORT=9814
 
   qui:
-    image: {{ stack_vars.qui.image }}:{{ stack_vars.qui.version }}
+    image: {{ stack_vars.qui.image }}
     container_name: qui
     restart: {{ karo_compose_restart_policy }}
     network_mode: "container:gluetun"

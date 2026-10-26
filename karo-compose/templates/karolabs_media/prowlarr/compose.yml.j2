@@ -8,7 +8,7 @@ name: prowlarr
 services:
 
   prowlarr:
-    image: {{ stack_vars.prowlarr.image }}:{{ stack_vars.prowlarr.version }}
+    image: {{ stack_vars.prowlarr.image }}
     container_name: prowlarr
     restart: {{ karo_compose_restart_policy }}
     network_mode: "container:gluetun"

@@ -9,7 +9,7 @@ name: traefik
 services:
 
   traefik:
-    image: {{ stack_vars.traefik.image }}:{{ stack_vars.traefik.version }}
+    image: {{ stack_vars.traefik.image }}
     container_name: traefik
     restart: {{ karo_compose_restart_policy }}
     security_opt:
@@ -55,7 +55,7 @@ services:
         condition: service_healthy
 
   tinyauth:
-    image: {{ stack_vars.tinyauth.image }}:{{ stack_vars.tinyauth.version }}
+    image: {{ stack_vars.tinyauth.image }}
     container_name: tinyauth
     restart: {{ karo_compose_restart_policy }}
     # user: 1000:1000 # unsupported
@@ -103,7 +103,7 @@ services:
       - cetusguard
 
   cetusguard:
-    image: {{ stack_vars.cetusguard.image }}:{{ stack_vars.cetusguard.version }}
+    image: {{ stack_vars.cetusguard.image }}
     container_name: cetusguard_traefik
     restart: {{ karo_compose_restart_policy }}
     read_only: true
