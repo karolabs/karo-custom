@@ -1,5 +1,8 @@
+# docs
 /.cache/
-/.dev/
 /docs/assets/overrides/.icons/
 /site/
+
+# misc
+/.dev/
 /notes.md
