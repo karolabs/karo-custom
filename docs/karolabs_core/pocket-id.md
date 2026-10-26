@@ -32,7 +32,7 @@ karolabs_core_pocketid_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [pocket-id/pocket-id](https://github.com/pocket-id/pocket-id)
-    - :lucide-docker: [docker.io/pocketid/pocket-id](https://hub.docker.com/r/pocketid/pocket-id)
+    - :simple-docker: [docker.io/pocketid/pocket-id](https://hub.docker.com/r/pocketid/pocket-id)
 
     </div>
 

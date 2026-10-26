@@ -26,7 +26,7 @@ karolabs_media_seerr_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [seerr-team/seerr](https://github.com/seerr-team/seerr)
-    - :lucide-docker: [docker.io/seerr/seerr](https://hub.docker.com/r/seerr/seerr)
+    - :simple-docker: [docker.io/seerr/seerr](https://hub.docker.com/r/seerr/seerr)
 
     </div>
 
