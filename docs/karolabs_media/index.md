@@ -10,16 +10,12 @@ icon: lucide/layers-2
 
 Full set of media services, for downloads, content organisation, user requests, and streaming.
 
-<!-- editorconfig-checker-disable -->
-
 ``` yaml { .no-copy hl_lines="3" }
 karo_compose_stack_groups:
   - karolabs_core # setup first
   - karolabs_media
   - karolabs_ops
 ```
-
-<!-- editorconfig-checker-enable -->
 
 !!! info "Setup order"
 

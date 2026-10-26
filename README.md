@@ -36,16 +36,12 @@ maintained by the karo-stack project.
     just vault homeserver
     ```
 
-    <!-- editorconfig-checker-disable -->
-
     ``` yaml { title="Ansible vault" }
     karo_compose_stack_groups:
       - karolabs_core
       - karolabs_media
       - karolabs_ops
     ```
-
-    <!-- editorconfig-checker-enable -->
 
 See the custom repo's documentation:
 [custom.karolabs.dev](https://custom.karolabs.dev)
