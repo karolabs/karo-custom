@@ -8,7 +8,7 @@ karolabs_ops_dozzle_enabled: false
 
 karolabs_ops_dozzle_stack_defaults:
   dozzle:
-    image: docker.io/amir20/dozzle:v11.3.0-alpine@sha256:925aff48f8561a2a0683e0720d027191673c8422108ea663b096b7e578e7d186 # -8<- [end:x]
+    image: "{{ karolabs_dozzle_image }}"
     domain: "dozzle.{{ karo_compose_root_domain }}"
     log_level: info # debug, info, warn, error
     host_label: "Homeserver"
@@ -16,5 +16,5 @@ karolabs_ops_dozzle_stack_defaults:
     secrets:
       oidc_client_secret: ""
   cetusguard:
-    image: docker.io/hectorm/cetusguard:v1.1.4@sha256:16a60a57943bb5ba4c3792c6b815cfb180f3492a7cabc469036ac1291c9c5365 # -8<- [end:x]
+    image: "{{ karolabs_cetusguard_image }}"
     log_level: 6 # 0-7 (min to max verbosity)

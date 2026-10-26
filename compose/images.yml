@@ -1,0 +1,42 @@
+# SPDX-FileCopyrightText: © 2026 hazzuk
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# karo-custom images file, for specifying Docker image references.
+# See https://docs.karolabs.dev for more information.
+
+# ---
+
+karolabs_cetusguard_image: docker.io/hectorm/cetusguard:v1.1.4@sha256:16a60a57943bb5ba4c3792c6b815cfb180f3492a7cabc469036ac1291c9c5365
+
+karolabs_dozzle_image: docker.io/amir20/dozzle:v11.3.0-alpine@sha256:925aff48f8561a2a0683e0720d027191673c8422108ea663b096b7e578e7d186
+
+karolabs_gluetun_image: docker.io/qmcgaw/gluetun:v3.41.3@sha256:fa19cc76b2af13d57a8d3dc3066f2ada061b1c761b8aecf989b3877c0486e027
+
+karolabs_godns_image: docker.io/timothyye/godns:v3.4.4@sha256:98b7cf18e8e90a0b7ea4cea02be60733a5cbe64274a7ecac1bb2be535ce0358a
+
+karolabs_haproxy_image: docker.io/haproxy:3.4.4-alpine@sha256:c0afc4864dca9c68694cd1290433f0ee79b5c55be80f6745a165ffe373b9a564
+
+karolabs_jellyfin_image: docker.io/jellyfin/jellyfin:12.1@sha256:78d3ea1207d1322471fcac39a614f004f2ccf7e878f95ab2977d752f07e4dd7e
+
+karolabs_ntfy_image: docker.io/binwiederhier/ntfy:v2.28.0@sha256:6ef4b819f722fccdc036af611c4774cfdc2de821ab74fdd48bbf4c9d6f8973da
+
+karolabs_pocketid_image: docker.io/pocketid/pocket-id:v2.14.0-distroless@sha256:e0f83a42a78d0759b6d2d8c7380ef0fa8a4c95dfa01ad88740a073ae9cc4ba94
+
+karolabs_prowlarr_image: docker.io/linuxserver/prowlarr:2.6.5.5623-ls161@sha256:c96b56d94d116a9f4de94bc23d3381689492e6c3cfb7435320e8d982e406f99a
+
+karolabs_qbittorrent_image: docker.io/qbittorrentofficial/qbittorrent-nox:5.2.3-1@sha256:9ebb534fe30bab98622cb84a8c3acecfd88319b2d540f52ecdec7b9f866374d7
+
+karolabs_qui_image: ghcr.io/autobrr/qui:v1.29.0@sha256:263c131adb007be98469959d5d3625e88476417c900519a1abad0bd609f0f103
+
+karolabs_radarr_image: docker.io/linuxserver/radarr:6.4.4.10685-ls317@sha256:c960f2b52ec6542dbe6707c5a21e696a7c74fd8b17997454f4d10a55dacee133
+
+karolabs_seerr_image: docker.io/seerr/seerr:preview-new-oidc@sha256:28744b1ced522beb7af8e5c966b73c6e46b1dc2c4c8cb497ad2f12d3139699a3
+
+karolabs_sonarr_image: docker.io/linuxserver/sonarr:4.0.20.3014-ls325@sha256:a5c1a5fecbef946927ab90ad68df319ac5fe644057e5fc18cd993f01ac07b2b2
+
+karolabs_tinyauth_image: ghcr.io/tinyauthapp/tinyauth:v5.2.0-distroless@sha256:aff752a57511f9346109b4d427c132db71dfa480138698e1f42feaf335f7cda9
+
+karolabs_traefik_image: docker.io/traefik:v3.7.13@sha256:f86a2cab1b5c649070c49f883c743dd32d8485a56e3368c5f93b9e91f1e91259
+
+karolabs_whoami_image: docker.io/traefik/whoami:v1.12.0@sha256:c4717a8d1f0134a7444e24f881160e033991f23027c6c5a9a3f8fd22e70d1d44

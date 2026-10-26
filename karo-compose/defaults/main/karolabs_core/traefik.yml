@@ -8,7 +8,7 @@ karolabs_core_traefik_enabled: false
 
 karolabs_core_traefik_stack_defaults:
   traefik:
-    image: docker.io/traefik:v3.7.13@sha256:f86a2cab1b5c649070c49f883c743dd32d8485a56e3368c5f93b9e91f1e91259 # -8<- [end:x]
+    image: "{{ karolabs_traefik_image }}"
     log_level: debug # trace, debug, info, warn, error, fatal, panic
     acme_staging_enabled: true
     acme_email: cert@example.com
@@ -23,12 +23,12 @@ karolabs_core_traefik_stack_defaults:
       acme_zone_api_token: "" # cloudflare
       acme_dns_api_token: "" # cloudflare
   tinyauth:
-    image: ghcr.io/tinyauthapp/tinyauth:v5.2.0-distroless@sha256:aff752a57511f9346109b4d427c132db71dfa480138698e1f42feaf335f7cda9 # -8<- [end:x]
+    image: "{{ karolabs_tinyauth_image }}"
     domain: "tinyauth.{{ karo_compose_root_domain }}"
     log_level: info # trace, debug, info, warn, error, fatal, panic
     oidc_client_id: ""
     secrets:
       oidc_client_secret: ""
   cetusguard:
-    image: docker.io/hectorm/cetusguard:v1.1.4@sha256:16a60a57943bb5ba4c3792c6b815cfb180f3492a7cabc469036ac1291c9c5365 # -8<- [end:x]
+    image: "{{ karolabs_cetusguard_image }}"
     log_level: 6 # 0-7 (min to max verbosity)
