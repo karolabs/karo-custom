@@ -5,16 +5,18 @@
   // zensical
   "files.associations": {
     "*.md": "python-markdown",
+    ".dev/*.md": "markdown",
+    "notes.md": "markdown"
   },
   "[python-markdown]": {
     "editor.defaultFormatter": "zensical.zensical-studio",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   // cspell
   "cSpell.enabled": true,
   "cSpell.enabledFileTypes": {
     "*": false,
     "markdown": true,
-    "python-markdown": true,
+    "python-markdown": true
   }
 }
