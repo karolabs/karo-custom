@@ -1,4 +1,5 @@
-.cache/
-docs/assets/overrides/.icons/
-site/
-notes.md
+/.cache/
+/.dev/
+/docs/assets/overrides/.icons/
+/site/
+/notes.md
