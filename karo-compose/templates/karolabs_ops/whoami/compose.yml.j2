@@ -8,7 +8,7 @@ name: whoami
 services:
 
   whoami:
-    image: {{ stack_vars.whoami.image }}:{{ stack_vars.whoami.version }}
+    image: {{ stack_vars.whoami.image }}
     container_name: whoami
     restart: {{ karo_compose_restart_policy }}
     networks:

@@ -17,7 +17,6 @@ karolabs_ops_proxy_enabled: "{{ karolabs_ops_proxy_server_enabled }}"
 
 karolabs_ops_proxy_stack_defaults:
   haproxy:
-    image: docker.io/haproxy # -8<- [end:x]
-    version: 3.4.4-alpine@sha256:c0afc4864dca9c68694cd1290433f0ee79b5c55be80f6745a165ffe373b9a564 # -8<- [end:x]
+    image: docker.io/haproxy:3.4.4-alpine@sha256:c0afc4864dca9c68694cd1290433f0ee79b5c55be80f6745a165ffe373b9a564 # -8<- [end:x]
     config_raw: |
       # haproxy config

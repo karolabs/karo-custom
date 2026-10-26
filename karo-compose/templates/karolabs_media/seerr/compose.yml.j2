@@ -8,7 +8,7 @@ name: seerr
 services:
 
   seerr:
-    image: {{ stack_vars.seerr.image }}:{{ stack_vars.seerr.version }}
+    image: {{ stack_vars.seerr.image }}
     container_name: seerr
     restart: {{ karo_compose_restart_policy }}
     init: true

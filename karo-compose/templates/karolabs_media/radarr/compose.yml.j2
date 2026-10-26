@@ -8,7 +8,7 @@ name: radarr
 services:
 
   radarr:
-    image: {{ stack_vars.radarr.image }}:{{ stack_vars.radarr.version }}
+    image: {{ stack_vars.radarr.image }}
     container_name: radarr
     restart: {{ karo_compose_restart_policy }}
     network_mode: "container:gluetun"

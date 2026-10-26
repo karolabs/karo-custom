@@ -8,7 +8,7 @@ name: pocketid
 services:
 
   pocketid:
-    image: {{ stack_vars.pocketid.image }}:{{ stack_vars.pocketid.version }}
+    image: {{ stack_vars.pocketid.image }}
     container_name: pocketid
     restart: {{ karo_compose_restart_policy }}
     user: 1000:1000

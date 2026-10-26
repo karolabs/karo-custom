@@ -8,7 +8,7 @@ name: jellyfin
 services:
 
   jellyfin:
-    image: {{ stack_vars.jellyfin.image }}:{{ stack_vars.jellyfin.version }}
+    image: {{ stack_vars.jellyfin.image }}
     container_name: jellyfin
     restart: {{ karo_compose_restart_policy }}
     networks:

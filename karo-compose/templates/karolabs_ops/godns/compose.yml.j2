@@ -8,7 +8,7 @@ name: godns
 services:
 
   godns:
-    image: {{ stack_vars.godns.image }}:{{ stack_vars.godns.version }}
+    image: {{ stack_vars.godns.image }}
     container_name: godns
     restart: {{ karo_compose_restart_policy }}
     networks:

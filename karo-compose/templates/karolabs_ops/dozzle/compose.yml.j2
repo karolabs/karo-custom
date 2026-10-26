@@ -8,7 +8,7 @@ name: dozzle
 services:
 
   dozzle:
-    image: {{ stack_vars.dozzle.image }}:{{ stack_vars.dozzle.version }}
+    image: {{ stack_vars.dozzle.image }}
     container_name: dozzle
     restart: {{ karo_compose_restart_policy }}
     networks:
@@ -41,7 +41,7 @@ services:
       - cetusguard
 
   cetusguard:
-    image: {{ stack_vars.cetusguard.image }}:{{ stack_vars.cetusguard.version }}
+    image: {{ stack_vars.cetusguard.image }}
     container_name: cetusguard_dozzle
     restart: {{ karo_compose_restart_policy }}
     read_only: true

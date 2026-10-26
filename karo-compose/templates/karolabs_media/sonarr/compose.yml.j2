@@ -8,7 +8,7 @@ name: sonarr
 services:
 
   sonarr:
-    image: {{ stack_vars.sonarr.image }}:{{ stack_vars.sonarr.version }}
+    image: {{ stack_vars.sonarr.image }}
     container_name: sonarr
     restart: {{ karo_compose_restart_policy }}
     network_mode: "container:gluetun"

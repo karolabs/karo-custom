@@ -8,7 +8,7 @@ name: ntfy
 services:
 
   ntfy:
-    image: {{ stack_vars.ntfy.image }}:{{ stack_vars.ntfy.version }}
+    image: {{ stack_vars.ntfy.image }}
     container_name: ntfy
     restart: {{ karo_compose_restart_policy }}
     # user: 1000:1000 # issue 1276
