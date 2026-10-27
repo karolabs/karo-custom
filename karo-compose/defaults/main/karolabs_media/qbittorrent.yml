@@ -6,7 +6,7 @@
 
 karolabs_media_qbittorrent_enabled: false
 
-karolabs_media_qbittorrent_stack_defaults:
+karolabs_media_qbittorrent_stack_defaults: # -8<- [start:docs]
   qbittorrent:
     image: "{{ karolabs_qbittorrent_image }}"
     domain: "qbittorrent.{{ karo_compose_root_domain }}"

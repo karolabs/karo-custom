@@ -16,7 +16,7 @@ icon: custom/dozzle
 karolabs_ops_dozzle_enabled: false
 
 karolabs_ops_dozzle_stack:
---8<-- "karo-compose/defaults/main/karolabs_ops/dozzle.yml:10"
+--8<-- "karo-compose/defaults/main/karolabs_ops/dozzle.yml:docs"
 ```
 
 [See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_ops/dozzle.yml){:target='_blank'}

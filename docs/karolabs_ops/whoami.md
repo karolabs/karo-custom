@@ -16,7 +16,7 @@ icon: lucide/file-question-mark
 karolabs_ops_whoami_enabled: false
 
 karolabs_ops_whoami_stack:
---8<-- "karo-compose/defaults/main/karolabs_ops/whoami.yml:10"
+--8<-- "karo-compose/defaults/main/karolabs_ops/whoami.yml:docs"
 ```
 
 [See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_ops/whoami.yml){:target='_blank'}

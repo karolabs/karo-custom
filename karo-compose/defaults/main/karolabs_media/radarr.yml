@@ -6,7 +6,7 @@
 
 karolabs_media_radarr_enabled: false
 
-karolabs_media_radarr_stack_defaults:
+karolabs_media_radarr_stack_defaults: # -8<- [start:docs]
   radarr:
     image: "{{ karolabs_radarr_image }}"
     domain: "radarr.{{ karo_compose_root_domain }}"

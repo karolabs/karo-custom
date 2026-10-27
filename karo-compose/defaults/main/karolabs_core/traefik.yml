@@ -6,7 +6,7 @@
 
 karolabs_core_traefik_enabled: false
 
-karolabs_core_traefik_stack_defaults:
+karolabs_core_traefik_stack_defaults: # -8<- [start:docs]
   traefik:
     image: "{{ karolabs_traefik_image }}"
     log_level: debug # trace, debug, info, warn, error, fatal, panic
@@ -17,7 +17,7 @@ karolabs_core_traefik_stack_defaults:
     dashboard_enabled: true
     dashboard_forward_auth_enabled: true
     dashboard_domain: "traefik.{{ karo_compose_root_domain }}"
-    custom_domains_raw: |
+    custom_domains_raw: | # additional domains
       # - main: "*.int.{{ karo_compose_root_domain }}"
     secrets:
       acme_zone_api_token: "" # cloudflare

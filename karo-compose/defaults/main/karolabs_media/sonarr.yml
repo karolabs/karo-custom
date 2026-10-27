@@ -6,7 +6,7 @@
 
 karolabs_media_sonarr_enabled: false
 
-karolabs_media_sonarr_stack_defaults:
+karolabs_media_sonarr_stack_defaults: # -8<- [start:docs]
   sonarr:
     image: "{{ karolabs_sonarr_image }}"
     domain: "sonarr.{{ karo_compose_root_domain }}"

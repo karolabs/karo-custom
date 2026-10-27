@@ -6,7 +6,7 @@
 
 karolabs_media_jellyfin_enabled: false
 
-karolabs_media_jellyfin_stack_defaults:
+karolabs_media_jellyfin_stack_defaults: # -8<- [start:docs]
   jellyfin:
     image: "{{ karolabs_jellyfin_image }}"
     domain: "jellyfin.{{ karo_compose_root_domain }}"

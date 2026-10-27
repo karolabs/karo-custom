@@ -6,7 +6,7 @@
 
 karolabs_media_gluetun_enabled: false
 
-karolabs_media_gluetun_stack_defaults:
+karolabs_media_gluetun_stack_defaults: # -8<- [start:docs]
   gluetun:
     image: "{{ karolabs_gluetun_image }}"
     log_level: info # debug, info, warning, error

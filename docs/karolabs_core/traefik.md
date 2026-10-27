@@ -16,7 +16,7 @@ icon: custom/traefik
 karolabs_core_traefik_enabled: false
 
 karolabs_core_traefik_stack:
---8<-- "karo-compose/defaults/main/karolabs_core/traefik.yml:10:20,23"
+--8<-- "karo-compose/defaults/main/karolabs_core/traefik.yml:docs"
 ```
 
 [See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_core/traefik.yml){:target='_blank'}

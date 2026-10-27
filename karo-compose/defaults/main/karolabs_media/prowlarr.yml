@@ -6,7 +6,7 @@
 
 karolabs_media_prowlarr_enabled: false
 
-karolabs_media_prowlarr_stack_defaults:
+karolabs_media_prowlarr_stack_defaults: # -8<- [start:docs]
   prowlarr:
     image: "{{ karolabs_prowlarr_image }}"
     domain: "prowlarr.{{ karo_compose_root_domain }}"

@@ -6,7 +6,7 @@
 
 karolabs_ops_dozzle_enabled: false
 
-karolabs_ops_dozzle_stack_defaults:
+karolabs_ops_dozzle_stack_defaults: # -8<- [start:docs]
   dozzle:
     image: "{{ karolabs_dozzle_image }}"
     domain: "dozzle.{{ karo_compose_root_domain }}"

@@ -6,7 +6,7 @@
 
 karolabs_core_pocketid_enabled: false
 
-karolabs_core_pocketid_stack_defaults:
+karolabs_core_pocketid_stack_defaults: # -8<- [start:docs]
   pocketid:
     image: "{{ karolabs_pocketid_image }}"
     log_level: info # debug, info, warn, error
