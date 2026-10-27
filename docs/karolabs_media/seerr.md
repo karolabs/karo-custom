@@ -19,8 +19,6 @@ karolabs_media_seerr_stack:
 --8<-- "karo-compose/defaults/main/karolabs_media/seerr.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_media/seerr.yml){:target='_blank'}
-
 ??? abstract "Seerr - Media discovery and requests manager"
 
     <div class="grid cards" markdown>

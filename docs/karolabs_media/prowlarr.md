@@ -19,8 +19,6 @@ karolabs_media_prowlarr_stack:
 --8<-- "karo-compose/defaults/main/karolabs_media/prowlarr.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_media/prowlarr.yml){:target='_blank'}
-
 ??? abstract "Prowlarr - Indexer manager"
 
     <div class="grid cards" markdown>

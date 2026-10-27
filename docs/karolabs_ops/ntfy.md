@@ -19,8 +19,6 @@ karolabs_ops_ntfy_stack:
 --8<-- "karo-compose/defaults/main/karolabs_ops/ntfy.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_ops/ntfy.yml){:target='_blank'}
-
 ??? abstract "ntfy - Notification service"
 
     <div class="grid cards" markdown>

@@ -19,8 +19,6 @@ karolabs_core_traefik_stack:
 --8<-- "karo-compose/defaults/main/karolabs_core/traefik.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_core/traefik.yml){:target='_blank'}
-
 ??? abstract "Traefik - Reverse proxy"
 
     <div class="grid cards" markdown>

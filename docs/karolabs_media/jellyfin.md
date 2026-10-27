@@ -19,8 +19,6 @@ karolabs_media_jellyfin_stack:
 --8<-- "karo-compose/defaults/main/karolabs_media/jellyfin.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_media/jellyfin.yml){:target='_blank'}
-
 ??? abstract "Jellyfin - Media server"
 
     <div class="grid cards" markdown>

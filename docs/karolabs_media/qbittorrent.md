@@ -19,8 +19,6 @@ karolabs_media_qbittorrent_stack:
 --8<-- "karo-compose/defaults/main/karolabs_media/qbittorrent.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_media/qbittorrent.yml){:target='_blank'}
-
 ??? abstract "qBittorrent - BitTorrent client"
 
     <div class="grid cards" markdown>

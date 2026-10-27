@@ -19,8 +19,6 @@ karolabs_ops_godns_stack:
 --8<-- "karo-compose/defaults/main/karolabs_ops/godns.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_ops/godns.yml){:target='_blank'}
-
 ??? abstract "GoDNS - Dynamic DNS client"
 
     <div class="grid cards" markdown>

@@ -25,8 +25,6 @@ karolabs_core_pocketid_stack:
 --8<-- "karo-compose/defaults/main/karolabs_core/pocketid.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_core/pocketid.yml){:target='_blank'}
-
 ??? abstract "Pocket ID - OIDC provider"
 
     <div class="grid cards" markdown>

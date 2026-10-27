@@ -19,8 +19,6 @@ karolabs_ops_whoami_stack:
 --8<-- "karo-compose/defaults/main/karolabs_ops/whoami.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_ops/whoami.yml){:target='_blank'}
-
 ??? abstract "whoami - Tiny web server for testing"
 
     <div class="grid cards" markdown>

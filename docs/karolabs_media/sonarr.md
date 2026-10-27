@@ -19,8 +19,6 @@ karolabs_media_sonarr_stack:
 --8<-- "karo-compose/defaults/main/karolabs_media/sonarr.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_media/sonarr.yml){:target='_blank'}
-
 ??? abstract "Sonarr - TV collection manager"
 
     <div class="grid cards" markdown>

@@ -19,8 +19,6 @@ karolabs_media_radarr_stack:
 --8<-- "karo-compose/defaults/main/karolabs_media/radarr.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_media/radarr.yml){:target='_blank'}
-
 ??? abstract "Radarr - Movie collection manager"
 
     <div class="grid cards" markdown>

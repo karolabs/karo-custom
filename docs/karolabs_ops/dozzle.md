@@ -19,8 +19,6 @@ karolabs_ops_dozzle_stack:
 --8<-- "karo-compose/defaults/main/karolabs_ops/dozzle.yml:docs"
 ```
 
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_ops/dozzle.yml){:target='_blank'}
-
 ??? abstract "Dozzle - Realtime log viewer for containers"
 
     <div class="grid cards" markdown>
