@@ -6,7 +6,7 @@
 
 karolabs_ops_ntfy_enabled: false
 
-karolabs_ops_ntfy_stack_defaults:
+karolabs_ops_ntfy_stack_defaults: # -8<- [start:docs]
   ntfy:
     image: "{{ karolabs_ntfy_image }}"
     domain: "ntfy.{{ karo_compose_root_domain }}"

@@ -6,7 +6,7 @@
 
 karolabs_media_seerr_enabled: false
 
-karolabs_media_seerr_stack_defaults:
+karolabs_media_seerr_stack_defaults: # -8<- [start:docs]
   seerr:
     image: "{{ karolabs_seerr_image }}"
     domain: "seerr.{{ karo_compose_root_domain }}"

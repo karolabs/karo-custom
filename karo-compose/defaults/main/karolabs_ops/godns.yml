@@ -6,7 +6,7 @@
 
 karolabs_ops_godns_enabled: false
 
-karolabs_ops_godns_stack_defaults:
+karolabs_ops_godns_stack_defaults: # -8<- [start:docs]
   godns:
     image: "{{ karolabs_godns_image }}"
     subdomain: dyndns

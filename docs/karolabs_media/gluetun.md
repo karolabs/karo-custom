@@ -16,10 +16,8 @@ icon: custom/gluetun
 karolabs_media_gluetun_enabled: false
 
 karolabs_media_gluetun_stack:
---8<-- "karo-compose/defaults/main/karolabs_media/gluetun.yml:10"
+--8<-- "karo-compose/defaults/main/karolabs_media/gluetun.yml:docs"
 ```
-
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_media/gluetun.yml){:target='_blank'}
 
 ??? abstract "Gluetun - Docker VPN client"
 

@@ -16,10 +16,8 @@ icon: custom/prowlarr
 karolabs_media_prowlarr_enabled: false
 
 karolabs_media_prowlarr_stack:
---8<-- "karo-compose/defaults/main/karolabs_media/prowlarr.yml:10"
+--8<-- "karo-compose/defaults/main/karolabs_media/prowlarr.yml:docs"
 ```
-
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_media/prowlarr.yml){:target='_blank'}
 
 ??? abstract "Prowlarr - Indexer manager"
 

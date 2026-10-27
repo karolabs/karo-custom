@@ -21,10 +21,8 @@ karolabs_ops_proxy_server_enabled: false # proxyserver
 karolabs_ops_proxy_client_enabled: false # homeserver
 
 karolabs_ops_proxy_stack:
---8<-- "karo-compose/defaults/main/karolabs_ops/proxy.yml:19"
+--8<-- "karo-compose/defaults/main/karolabs_ops/proxy.yml:docs"
 ```
-
-[See all defaults](https://github.com/karolabs/karo-custom/blob/main/karo-compose/defaults/main/karolabs_ops/proxy.yml){:target='_blank'}
 
 ??? abstract "HAProxy - High-performance TCP reverse proxy"
 
