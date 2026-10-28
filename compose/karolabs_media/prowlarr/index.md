@@ -17,7 +17,7 @@ weight: 8
 karolabs_media_prowlarr_enabled: false
 
 karolabs_media_prowlarr_stack:
---8<-- "karo-compose/defaults/main/karolabs_media/prowlarr.yml:docs"
+--8<-- "{{ page.url}}/stack.yml:docs"
 ```
 
 ??? abstract "Prowlarr - Indexer manager"

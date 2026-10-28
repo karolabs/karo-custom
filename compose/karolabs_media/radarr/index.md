@@ -17,7 +17,7 @@ weight: 12
 karolabs_media_radarr_enabled: false
 
 karolabs_media_radarr_stack:
---8<-- "karo-compose/defaults/main/karolabs_media/radarr.yml:docs"
+--8<-- "{{ page.url}}/stack.yml:docs"
 ```
 
 ??? abstract "Radarr - Movie collection manager"

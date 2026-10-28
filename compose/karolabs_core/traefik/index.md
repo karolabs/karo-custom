@@ -17,7 +17,7 @@ weight: -2
 karolabs_core_traefik_enabled: false
 
 karolabs_core_traefik_stack:
---8<-- "karo-compose/defaults/main/karolabs_core/traefik.yml:docs"
+--8<-- "{{ page.url}}/stack.yml:docs"
 ```
 
 ??? abstract "Traefik - Reverse proxy"

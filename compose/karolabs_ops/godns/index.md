@@ -16,7 +16,7 @@ icon: lucide/globe
 karolabs_ops_godns_enabled: false
 
 karolabs_ops_godns_stack:
---8<-- "karo-compose/defaults/main/karolabs_ops/godns.yml:docs"
+--8<-- "{{ page.url}}/stack.yml:docs"
 ```
 
 ??? abstract "GoDNS - Dynamic DNS client"

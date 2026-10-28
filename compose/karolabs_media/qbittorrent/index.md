@@ -17,7 +17,7 @@ weight: 4
 karolabs_media_qbittorrent_enabled: false
 
 karolabs_media_qbittorrent_stack:
---8<-- "karo-compose/defaults/main/karolabs_media/qbittorrent.yml:docs"
+--8<-- "{{ page.url}}/stack.yml:docs"
 ```
 
 ??? abstract "qBittorrent - BitTorrent client"

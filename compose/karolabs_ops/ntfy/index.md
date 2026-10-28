@@ -16,7 +16,7 @@ icon: simple/ntfy
 karolabs_ops_ntfy_enabled: false
 
 karolabs_ops_ntfy_stack:
---8<-- "karo-compose/defaults/main/karolabs_ops/ntfy.yml:docs"
+--8<-- "{{ page.url}}/stack.yml:docs"
 ```
 
 ??? abstract "ntfy - Notification service"

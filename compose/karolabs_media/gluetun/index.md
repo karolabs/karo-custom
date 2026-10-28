@@ -17,7 +17,7 @@ weight: 0
 karolabs_media_gluetun_enabled: false
 
 karolabs_media_gluetun_stack:
---8<-- "karo-compose/defaults/main/karolabs_media/gluetun.yml:docs"
+--8<-- "{{ page.url}}/stack.yml:docs"
 ```
 
 ??? abstract "Gluetun - Docker VPN client"

@@ -17,7 +17,7 @@ weight: 24
 karolabs_media_seerr_enabled: false
 
 karolabs_media_seerr_stack:
---8<-- "karo-compose/defaults/main/karolabs_media/seerr.yml:docs"
+--8<-- "{{ page.url}}/stack.yml:docs"
 ```
 
 ??? abstract "Seerr - Media discovery and requests manager"
