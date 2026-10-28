@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: © 2026 hazzuk
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# An `updatecli` values file, for defining generic values.
+# See https://updatecli.io for more information.
+
+image:
+  repository: docker.io/jellyfin/jellyfin
+  tag_regex: '^([0-9]+\.[0-9]+)$' # 1.0
+  semver:
+    strict: false

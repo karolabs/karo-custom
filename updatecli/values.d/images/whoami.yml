@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: © 2026 hazzuk
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# An `updatecli` values file, for defining generic values.
+# See https://updatecli.io for more information.
+
+image:
+  repository: docker.io/traefik/whoami
+  # tag_regex: v1.0.0
