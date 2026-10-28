@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: © 2026 hazzuk
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# An `updatecli` values file, for defining generic values.
+# See https://updatecli.io for more information.
+
+image:
+  repository: docker.io/linuxserver/prowlarr
+  tag_regex: '^([0-9]+\.[0-9]+\.[0-9]+)\.[0-9]+-ls[0-9]+$' # 1.0.0.0-ls0
