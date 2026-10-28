@@ -1,0 +1,39 @@
+# SPDX-FileCopyrightText: © 2026 hazzuk
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# GitHub Actions workflow, for running configurable automated processes.
+# See https://docs.github.com/actions for more information.
+# yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
+
+---
+
+name: Updatecli
+
+on:
+  # manual trigger
+  workflow_dispatch:
+  # once per day @ 08:42
+  schedule:
+    - cron: "42 8 * * *"
+      timezone: "Europe/London"
+
+jobs:
+
+  call-updatecli-images:
+    name: Updatecli Images
+    # external workflow file
+    uses: karolabs/updatecli/.github/workflows/updatecli-images.yml@main
+
+    # grant permissions
+    permissions:
+      contents: write
+      pull-requests: write
+
+    # pass variables and secrets
+    with:
+      github-branch: dev
+      github-pr-label: Kind/Update
+    secrets:
+      dockerhub-username: ${{ secrets.DOCKERHUB_USERNAME }}
+      dockerhub-token: ${{ secrets.DOCKERHUB_TOKEN }}
