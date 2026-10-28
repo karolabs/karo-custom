@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 icon: simple/radarr
+weight: 12
 ---
 
 # Radarr

@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 icon: custom/traefik
+weight: -2
 ---
 
 # Traefik

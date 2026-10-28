@@ -16,36 +16,20 @@ copyright = "© 2026 hazzuk"
 repo_name = "karolabs/karo-custom"
 repo_url = "https://github.com/karolabs/karo-custom"
 
-nav = [
-  { "Home" = [
-    "index.md",
-  ] },
-  { "Stack groups" = [
-    { "karolabs_core" = [
-      "karolabs_core/index.md",
-      "karolabs_core/traefik.md",
-      "karolabs_core/pocket-id.md",
-    ] },
-    { "karolabs_ops" = [
-      "karolabs_ops/index.md",
-      "karolabs_ops/dozzle.md",
-      "karolabs_ops/godns.md",
-      "karolabs_ops/ntfy.md",
-      "karolabs_ops/proxy.md",
-      "karolabs_ops/whoami.md",
-    ] },
-    { "karolabs_media" = [
-      "karolabs_media/index.md",
-      "karolabs_media/gluetun.md",
-      "karolabs_media/qbittorrent.md",
-      "karolabs_media/prowlarr.md",
-      "karolabs_media/radarr.md",
-      "karolabs_media/sonarr.md",
-      "karolabs_media/jellyfin.md",
-      "karolabs_media/seerr.md",
-    ] },
-  ] },
+exclude_docs = """
+snippets.md
+compose/images.yml
+compose/*/group.yml
+compose/*/*/*.j2
+"""
+
+# watch symbolic links
+watch = [
+  "compose",
 ]
+
+[project.plugins.mkdocs-nav-weight]
+section_renamed = true  # use page titles
 
 [project.theme]
 custom_dir = "docs/assets/overrides"

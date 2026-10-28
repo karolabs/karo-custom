@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 icon: lucide/layers-2
+weight: 3
 ---
 
 # karolabs_media

@@ -5,6 +5,7 @@
 
 icon: lucide/layers-2
 status: required
+weight: 1
 ---
 
 # karolabs_core

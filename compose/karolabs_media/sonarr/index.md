@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 
 icon: custom/sonarr
+weight: 16
 ---
 
 # Sonarr
