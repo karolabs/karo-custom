@@ -37,6 +37,6 @@ karolabs_sonarr_image: docker.io/linuxserver/sonarr:4.0.20.3014-ls325@sha256:a5c
 
 karolabs_tinyauth_image: ghcr.io/tinyauthapp/tinyauth:v5.2.0-distroless@sha256:aff752a57511f9346109b4d427c132db71dfa480138698e1f42feaf335f7cda9
 
-karolabs_traefik_image: docker.io/traefik:v3.7.13@sha256:f86a2cab1b5c649070c49f883c743dd32d8485a56e3368c5f93b9e91f1e91259
+karolabs_traefik_image: docker.io/traefik:v3.7.16@sha256:1336e85aaed293bd63d005086e0dd013b04078b26aaeb1c18b26a2f928af7e65
 
 karolabs_whoami_image: docker.io/traefik/whoami:v1.12.0@sha256:c4717a8d1f0134a7444e24f881160e033991f23027c6c5a9a3f8fd22e70d1d44
