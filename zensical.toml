@@ -35,6 +35,9 @@ extra_javascript = [
 [project.plugins.mkdocs-nav-weight]
 section_renamed = true  # use page titles
 
+[project.plugins.minify]
+minify_html = true
+
 [project.theme]
 custom_dir = "docs/assets/overrides"
 favicon = "assets/images/favicon.png"
