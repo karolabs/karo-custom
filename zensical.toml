@@ -24,9 +24,7 @@ compose
 """
 
 # watch symbolic links
-watch = [
-  "compose",
-]
+watch = ["compose", "README.md"]
 
 [project.plugins.mkdocs-nav-weight]
 section_renamed = true  # use page titles
