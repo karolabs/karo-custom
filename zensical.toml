@@ -26,6 +26,10 @@ compose
 # watch symbolic links
 watch = ["compose", "README.md"]
 
+extra_javascript = [
+  "assets/javascripts/open_in_new_tab.js",
+]
+
 [project.plugins.mkdocs-nav-weight]
 section_renamed = true  # use page titles
 
