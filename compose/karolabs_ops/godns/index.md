@@ -1,0 +1,49 @@
+---
+# SPDX-FileCopyrightText: © 2026 hazzuk
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+icon: lucide/globe
+---
+
+# GoDNS
+
+> Dynamic DNS client
+
+``` yaml { title="Ansible vault" }
+# godns
+
+karolabs_ops_godns_enabled: false
+
+karolabs_ops_godns_stack:
+--8<-- "{{ page.url}}/stack.yml:docs"
+```
+
+??? abstract "GoDNS - Dynamic DNS client"
+
+    <div class="grid cards" markdown>
+
+    - :simple-github: [timothyye/godns](https://github.com/timothyye/godns)
+    - :simple-docker: [docker.io/timothyye/godns](https://hub.docker.com/r/timothyye/godns)
+
+    </div>
+
+    ??? tip "GoDNS Cloudflare API token"
+
+        --8<-- "docs/snippets.md:cloudflare_token"
+
+        === "`godns_dns_api_token`"
+
+            - Token name
+
+                ``` txt
+                GoDNS (example.com) - Edit dynamic DNS record
+                ```
+
+            - Permissions: Zone, DNS, Edit
+
+            - Zone Resources: Include, Specific zone, example.com
+
+    !!! note "Links"
+
+        - :lucide-tag: [Releases](https://github.com/timothyye/godns/releases)
