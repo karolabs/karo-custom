@@ -33,6 +33,7 @@ section_renamed = true  # use page titles
 
 [project.theme]
 custom_dir = "docs/assets/overrides"
+favicon = "assets/images/favicon.png"
 language = "en"
 
 features = [
