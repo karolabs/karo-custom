@@ -33,6 +33,9 @@ extra_javascript = [
 [project.plugins.mkdocs-nav-weight]
 section_renamed = true  # use page titles
 
+[project.plugins.minify]
+minify_html = true
+
 [project.plugins.macros]
 
 [project.theme]
