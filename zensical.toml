@@ -16,17 +16,15 @@ copyright = "© 2026 hazzuk"
 repo_name = "karolabs/karo-custom"
 repo_url = "https://github.com/karolabs/karo-custom"
 
+# exclude files from build
 exclude_docs = """
 snippets.md
-compose/images.yml
-compose/*/group.yml
-compose/*/*/*.j2
+compose
+!compose/**/*.md
 """
 
 # watch symbolic links
-watch = [
-  "compose",
-]
+watch = ["compose", "README.md"]
 
 extra_javascript = [
   "assets/javascripts/open_in_new_tab.js",
@@ -37,6 +35,8 @@ section_renamed = true  # use page titles
 
 [project.plugins.minify]
 minify_html = true
+
+[project.plugins.macros]
 
 [project.theme]
 custom_dir = "docs/assets/overrides"
@@ -109,7 +109,7 @@ pygments_lang_class = true
 
 # embed external files
 [project.markdown_extensions.pymdownx.snippets]
-# auto_append = ["abbreviations.md"]
+check_paths = true
 
 # nest code/content blocks
 [project.markdown_extensions.pymdownx.superfences]

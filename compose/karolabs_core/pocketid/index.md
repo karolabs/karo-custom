@@ -22,7 +22,7 @@ icon: custom/pocket-id
 karolabs_core_pocketid_enabled: false
 
 karolabs_core_pocketid_stack:
---8<-- "karo-compose/defaults/main/karolabs_core/pocketid.yml:docs"
+--8<-- "{{ page.url}}/stack.yml:docs"
 ```
 
 ??? abstract "Pocket ID - OIDC provider"

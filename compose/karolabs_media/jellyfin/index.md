@@ -17,7 +17,7 @@ weight: 20
 karolabs_media_jellyfin_enabled: false
 
 karolabs_media_jellyfin_stack:
---8<-- "karo-compose/defaults/main/karolabs_media/jellyfin.yml:docs"
+--8<-- "{{ page.url}}/stack.yml:docs"
 ```
 
 ??? abstract "Jellyfin - Media server"

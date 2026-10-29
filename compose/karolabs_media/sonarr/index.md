@@ -17,7 +17,7 @@ weight: 16
 karolabs_media_sonarr_enabled: false
 
 karolabs_media_sonarr_stack:
---8<-- "karo-compose/defaults/main/karolabs_media/sonarr.yml:docs"
+--8<-- "{{ page.url}}/stack.yml:docs"
 ```
 
 ??? abstract "Sonarr - TV collection manager"
