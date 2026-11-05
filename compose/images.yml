@@ -9,7 +9,7 @@
 
 karolabs_cetusguard_image: docker.io/hectorm/cetusguard:v1.1.4@sha256:16a60a57943bb5ba4c3792c6b815cfb180f3492a7cabc469036ac1291c9c5365
 
-karolabs_dozzle_image: docker.io/amir20/dozzle:v11.4.0-alpine@sha256:8754a9235388911646a29aab6d382be6cf2e8d4fc0ff9ef908225a173cf52352
+karolabs_dozzle_image: docker.io/amir20/dozzle:v11.4.1-alpine@sha256:eeef5023821d5d42ddf7ef3c59ffe7f69b75cfed8f61f235badc6e7c9115d687
 
 karolabs_gluetun_image: docker.io/qmcgaw/gluetun:v3.41.3@sha256:fa19cc76b2af13d57a8d3dc3066f2ada061b1c761b8aecf989b3877c0486e027
 
