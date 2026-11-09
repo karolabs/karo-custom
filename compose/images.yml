@@ -29,7 +29,7 @@ karolabs_qbittorrent_image: docker.io/qbittorrentofficial/qbittorrent-nox:5.2.3-
 
 karolabs_qui_image: ghcr.io/autobrr/qui:v1.29.0@sha256:263c131adb007be98469959d5d3625e88476417c900519a1abad0bd609f0f103
 
-karolabs_radarr_image: docker.io/linuxserver/radarr:6.4.4.10685-ls325@sha256:ade5937813c6ae415b29db729386e53fea3ecf067a019849bafbe2d2a6ec02ba
+karolabs_radarr_image: docker.io/linuxserver/radarr:6.4.4.10685-ls326@sha256:51a9ac2a9eb47afc833541e5fd6c11b86eb9f810694c22fa2429e3078e9194b2
 
 karolabs_seerr_image: docker.io/seerr/seerr:preview-new-oidc@sha256:28744b1ced522beb7af8e5c966b73c6e46b1dc2c4c8cb497ad2f12d3139699a3
 
