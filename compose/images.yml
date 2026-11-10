@@ -15,7 +15,7 @@ karolabs_gluetun_image: docker.io/qmcgaw/gluetun:v3.41.3@sha256:fa19cc76b2af13d5
 
 karolabs_godns_image: docker.io/timothyye/godns:v3.4.4@sha256:98b7cf18e8e90a0b7ea4cea02be60733a5cbe64274a7ecac1bb2be535ce0358a
 
-karolabs_haproxy_image: docker.io/haproxy:3.4.7-alpine@sha256:5312d37032c079c4937d45ef63758852434351f3b425a3703521fd999837abcf
+karolabs_haproxy_image: docker.io/haproxy:3.4.7-alpine@sha256:b9fe316f718d5015c5cfebd8ca019591f3e44656f61d93cb8b59a1028961e530
 
 karolabs_jellyfin_image: docker.io/jellyfin/jellyfin:12.1@sha256:78d3ea1207d1322471fcac39a614f004f2ccf7e878f95ab2977d752f07e4dd7e
 
