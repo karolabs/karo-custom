@@ -7,7 +7,7 @@
 
 # ---
 
-karolabs_cetusguard_image: docker.io/hectorm/cetusguard:v1.1.4@sha256:16a60a57943bb5ba4c3792c6b815cfb180f3492a7cabc469036ac1291c9c5365
+karolabs_cetusguard_image: docker.io/hectorm/cetusguard:v1.2.0@sha256:c8804639d538d422a284bb61e65fc33c6135a3084e8dcc7958680fef5aa63543
 
 karolabs_dozzle_image: docker.io/amir20/dozzle:v11.4.3-alpine@sha256:9c6769f2ee3f93b61243e4e6ee2a6a8721f14ed1b0c05588bd7adfaaf9bd545c
 
