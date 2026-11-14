@@ -19,7 +19,7 @@ karolabs_haproxy_image: docker.io/haproxy:3.4.7-alpine@sha256:b9fe316f718d5015c5
 
 karolabs_jellyfin_image: docker.io/jellyfin/jellyfin:12.4@sha256:fea863d0cd9ec445985d9c75fc6ed64e38a1d2766cf0c250a33d553f4fc1b771
 
-karolabs_ntfy_image: docker.io/binwiederhier/ntfy:v2.37.2@sha256:1875ddcf815c8a3c981d6d78c67a93452d0abba79b1ab9520b1f5f5238902bd7
+karolabs_ntfy_image: docker.io/binwiederhier/ntfy:v2.38.0@sha256:771309aecfce18d8fe2bfb8069994ddd6be6ca6ccdd7badace3d791a0045ff0d
 
 karolabs_pocketid_image: docker.io/pocketid/pocket-id:v2.19.2-distroless@sha256:a21166a4eb513d2ffcbf815398480998d996a9e719cfba029395517658626f9e
 
