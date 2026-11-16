@@ -1,0 +1,43 @@
+# SPDX-FileCopyrightText: © 2026 hazzuk
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# karo-custom repository configuration file.
+# See https://docs.karolabs.dev for more information.
+
+spec_version = 1
+
+## github username or organisation
+username = "karolabs"
+
+## spdx copyright holder, defaults to username
+author = "hazzuk"
+
+## spdx license identifier https://spdx.org/licenses
+license = "AGPL-3.0-only"
+
+## usernames of required custom repos
+# dependencies = ["karolabs"]
+
+## stack groups and related stacks
+[compose]
+karolabs_core = [
+  "traefik",
+  "pocketid",
+]
+karolabs_media = [
+  "gluetun",
+  "qbittorrent",
+  "prowlarr",
+  "radarr",
+  "sonarr",
+  "jellyfin",
+  "seerr",
+]
+karolabs_ops = [
+  "proxy",
+  "whoami",
+  "ntfy",
+  "godns",
+  "dozzle",
+]
