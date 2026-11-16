@@ -20,7 +20,14 @@
     {
       "pattern": "custom.karolabs.dev",
       "custom_domain": true
+    },
+    {
+      "pattern": "build.custom.karolabs.dev",
+      "custom_domain": true,
+      "previews_enabled": true,
+      "enabled": false
     }
   ],
+  "workers_dev": false,
   "previews": {}
 }
