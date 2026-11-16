@@ -25,7 +25,7 @@ karolabs_media_prowlarr_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [prowlarr/prowlarr](https://github.com/prowlarr/prowlarr)
-    - :simple-docker: [docker.io/linuxserver/prowlarr](https://hub.docker.com/r/linuxserver/prowlarr)
+    - :lucide-bookmark: [Documentation](https://wiki.servarr.com/prowlarr)
 
     </div>
 
@@ -74,8 +74,3 @@ karolabs_media_prowlarr_stack:
 
             - Analytics
                 - Send anonymous usage data: `false` (optional)
-
-    !!! note "Links"
-
-        - :lucide-bookmark: [Documentation](https://wiki.servarr.com/prowlarr)
-        - :lucide-tag: [Releases](https://github.com/prowlarr/prowlarr/releases)

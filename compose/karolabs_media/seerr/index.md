@@ -25,7 +25,7 @@ karolabs_media_seerr_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [seerr-team/seerr](https://github.com/seerr-team/seerr)
-    - :simple-docker: [docker.io/seerr/seerr](https://hub.docker.com/r/seerr/seerr)
+    - :lucide-bookmark: [Documentation](https://docs.seerr.dev/)
 
     </div>
 
@@ -117,8 +117,3 @@ karolabs_media_seerr_stack:
                 - Allow new users: `true`
 
             -   Edit your user and link your account
-
-    !!! note "Links"
-
-        - :lucide-bookmark: [Documentation](https://docs.seerr.dev/)
-        - :lucide-tag: [Releases](https://github.com/seerr-team/seerr/releases)

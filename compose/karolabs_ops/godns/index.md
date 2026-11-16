@@ -24,7 +24,6 @@ karolabs_ops_godns_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [timothyye/godns](https://github.com/timothyye/godns)
-    - :simple-docker: [docker.io/timothyye/godns](https://hub.docker.com/r/timothyye/godns)
 
     </div>
 
@@ -43,7 +42,3 @@ karolabs_ops_godns_stack:
             - Permissions: Zone, DNS, Edit
 
             - Zone Resources: Include, Specific zone, example.com
-
-    !!! note "Links"
-
-        - :lucide-tag: [Releases](https://github.com/timothyye/godns/releases)

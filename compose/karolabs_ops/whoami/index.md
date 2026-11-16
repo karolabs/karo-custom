@@ -24,10 +24,5 @@ karolabs_ops_whoami_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [traefik/whoami](https://github.com/traefik/whoami)
-    - :simple-docker: [docker.io/traefik/whoami](https://hub.docker.com/r/traefik/whoami)
 
     </div>
-
-    !!! note "Links"
-
-        - :lucide-tag: [Releases](https://github.com/traefik/whoami/releases)

@@ -8,3 +8,6 @@
 image:
   repository: docker.io/qbittorrentofficial/qbittorrent-nox
   tag_regex: '^([0-9]+\.[0-9]+\.[0-9]+)-1$' # 1.0.0-1
+  pr_markdown: |
+    [Website](https://www.qbittorrent.org/news)
+    [Commits](https://github.com/qbittorrent/docker-qbittorrent-nox/commits/main/)

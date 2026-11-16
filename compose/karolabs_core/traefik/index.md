@@ -25,7 +25,7 @@ karolabs_core_traefik_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [traefik/traefik](https://github.com/traefik/traefik)
-    - :simple-docker: [docker.io/traefik](https://hub.docker.com/_/traefik)
+    - :lucide-bookmark: [Documentation](https://doc.traefik.io/traefik/)
 
     </div>
 
@@ -69,36 +69,19 @@ karolabs_core_traefik_stack:
 
             - Zone Resources: Include, Specific zone, example.com
 
-    !!! note "Links"
-
-        - :lucide-bookmark: [Documentation](https://doc.traefik.io/traefik/)
-        - :lucide-tag: [Releases](https://github.com/traefik/traefik/releases)
-        - :lucide-zap: [Migration guides](https://doc.traefik.io/traefik/migrate/v3/)
-        - :lucide-clock: [Deprecation notices](https://doc.traefik.io/traefik/v3.7/deprecation/releases/)
-
 ??? abstract "Tinyauth - Authentication middleware (forward auth)"
 
     <div class="grid cards" markdown>
 
     - :simple-github: [tinyauthapp/tinyauth](https://github.com/tinyauthapp/tinyauth)
-    - :lucide-container: [ghcr.io/tinyauthapp/tinyauth](https://ghcr.io/tinyauthapp/tinyauth)
+    - :lucide-bookmark: [Documentation](https://tinyauth.app/docs/getting-started/)
 
     </div>
-
-    !!! note "Links"
-
-        - :lucide-bookmark: [Documentation](https://tinyauth.app/docs/getting-started/)
-        - :lucide-tag: [Releases](https://github.com/tinyauthapp/tinyauth/releases)
 
 ??? abstract "CetusGuard - Docker socket proxy"
 
     <div class="grid cards" markdown>
 
     - :simple-github: [hectorm/cetusguard](https://github.com/hectorm/cetusguard)
-    - :simple-docker: [docker.io/hectorm/cetusguard](https://hub.docker.com/r/hectorm/cetusguard)
 
     </div>
-
-    !!! note "Links"
-
-        - :lucide-tag: [Releases](https://github.com/hectorm/cetusguard/releases)

@@ -25,7 +25,7 @@ karolabs_media_jellyfin_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [jellyfin/jellyfin](https://github.com/jellyfin/jellyfin)
-    - :simple-docker: [docker.io/jellyfin/jellyfin](https://hub.docker.com/r/jellyfin/jellyfin)
+    - :lucide-bookmark: [Documentation](https://jellyfin.org/docs/)
 
     </div>
 
@@ -57,8 +57,3 @@ karolabs_media_jellyfin_stack:
         === "Remote access"
 
             - Allow remote connections to this server: `false`
-
-    !!! note "Links"
-
-        - :lucide-bookmark: [Documentation](https://jellyfin.org/docs/)
-        - :lucide-tag: [Releases](https://github.com/jellyfin/jellyfin/releases)

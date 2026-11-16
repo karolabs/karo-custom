@@ -29,7 +29,7 @@ karolabs_ops_proxy_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [haproxy/haproxy](https://github.com/haproxy/haproxy)
-    - :simple-docker: [docker.io/haproxy](https://hub.docker.com/_/haproxy)
+    - :lucide-bookmark: [Documentation](https://docs.haproxy.org/)
 
     </div>
 
@@ -56,8 +56,3 @@ karolabs_ops_proxy_stack:
           mode tcp
           server wg {{ karolabs_ops_proxy_client_wireguard_ipv4 }}:443 send-proxy-v2 check
         ```
-
-    !!! note "Links"
-
-        - :lucide-tag: [Latest versions](https://www.haproxy.org/)
-        - :lucide-zap: [Breaking changes](https://github.com/haproxy/wiki/wiki/breaking-changes)

@@ -8,3 +8,5 @@
 image:
   repository: docker.io/qmcgaw/gluetun
   # tag_regex: v1.0.0
+  pr_markdown: |
+    [Releases](https://github.com/passteque/gluetun/releases)

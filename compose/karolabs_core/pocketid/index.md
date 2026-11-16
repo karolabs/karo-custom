@@ -30,11 +30,6 @@ karolabs_core_pocketid_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [pocket-id/pocket-id](https://github.com/pocket-id/pocket-id)
-    - :simple-docker: [docker.io/pocketid/pocket-id](https://hub.docker.com/r/pocketid/pocket-id)
+    - :lucide-bookmark: [Documentation](https://pocket-id.org/docs)
 
     </div>
-
-    !!! note "Links"
-
-        - :lucide-bookmark: [Documentation](https://pocket-id.org/docs/introduction)
-        - :lucide-tag: [Releases](https://github.com/pocket-id/pocket-id/releases)

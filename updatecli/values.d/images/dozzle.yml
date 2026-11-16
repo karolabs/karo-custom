@@ -8,3 +8,5 @@
 image:
   repository: docker.io/amir20/dozzle
   tag_regex: '^v([0-9]+\.[0-9]+\.[0-9]+)-alpine$' # v1.0.0-alpine
+  pr_markdown: |
+    [Releases](https://github.com/amir20/dozzle/releases)
