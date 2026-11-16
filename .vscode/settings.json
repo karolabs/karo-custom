@@ -5,7 +5,7 @@
   // zensical
   "files.associations": {
     "*.md": "python-markdown",
-    ".dev/*.md": "markdown",
+    "**/.dev/*.md": "markdown",
     "notes.md": "markdown"
   },
   "[python-markdown]": {
