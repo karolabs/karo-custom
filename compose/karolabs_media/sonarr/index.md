@@ -25,7 +25,7 @@ karolabs_media_sonarr_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [sonarr/sonarr](https://github.com/sonarr/sonarr)
-    - :simple-docker: [docker.io/linuxserver/sonarr](https://hub.docker.com/r/linuxserver/sonarr)
+    - :lucide-bookmark: [Documentation](https://wiki.servarr.com/sonarr)
 
     </div>
 
@@ -89,8 +89,3 @@ karolabs_media_sonarr_stack:
 
             - Analytics
                 - Send anonymous usage data: `false` (optional)
-
-    !!! note "Links"
-
-        - :lucide-bookmark: [Documentation](https://wiki.servarr.com/sonarr)
-        - :lucide-tag: [Releases](https://github.com/sonarr/sonarr/releases)

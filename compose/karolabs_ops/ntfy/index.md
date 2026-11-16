@@ -24,11 +24,6 @@ karolabs_ops_ntfy_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [binwiederhier/ntfy](https://github.com/binwiederhier/ntfy)
-    - :simple-docker: [docker.io/binwiederhier/ntfy](https://hub.docker.com/r/binwiederhier/ntfy)
+    - :lucide-bookmark: [Documentation](https://docs.ntfy.sh/)
 
     </div>
-
-    !!! note "Links"
-
-        - :lucide-bookmark: [Documentation](https://docs.ntfy.sh/)
-        - :lucide-tag: [Releases](https://github.com/binwiederhier/ntfy/releases)

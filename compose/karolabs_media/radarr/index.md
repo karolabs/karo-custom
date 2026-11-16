@@ -25,7 +25,7 @@ karolabs_media_radarr_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [radarr/radarr](https://github.com/Radarr/Radarr)
-    - :simple-docker: [docker.io/linuxserver/radarr](https://hub.docker.com/r/linuxserver/radarr)
+    - :lucide-bookmark: [Documentation](https://wiki.servarr.com/radarr)
 
     </div>
 
@@ -94,8 +94,3 @@ karolabs_media_radarr_stack:
 
             - Analytics
                 - Send anonymous usage data: `false` (optional)
-
-    !!! note "Links"
-
-        - :lucide-bookmark: [Documentation](https://wiki.servarr.com/radarr)
-        - :lucide-tag: [Releases](https://github.com/radarr/radarr/releases)

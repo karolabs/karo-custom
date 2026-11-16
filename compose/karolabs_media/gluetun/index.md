@@ -25,15 +25,10 @@ karolabs_media_gluetun_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [passteque/gluetun](https://github.com/passteque/gluetun)
-    - :simple-docker: [docker.io/qmcgaw/gluetun](https://hub.docker.com/r/qmcgaw/gluetun)
+    - :lucide-bookmark: [Documentation](https://github.com/qdm12/gluetun-wiki)
 
     </div>
 
     !!! info "WireGuard config"
 
         Your VPN service should be able to provide you with a `wireguard.conf` file.
-
-    !!! note "Links"
-
-        - :lucide-bookmark: [Documentation](https://github.com/qdm12/gluetun-wiki)
-        - :lucide-tag: [Releases](https://github.com/passteque/gluetun/releases)

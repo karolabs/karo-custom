@@ -25,7 +25,7 @@ karolabs_media_qbittorrent_stack:
     <div class="grid cards" markdown>
 
     - :simple-github: [qbittorrent/docker-qbittorrent-nox](https://github.com/qbittorrent/docker-qbittorrent-nox)
-    - :simple-docker: [qbittorrentofficial/qbittorrent-nox](https://hub.docker.com/r/qbittorrentofficial/qbittorrent-nox)
+    - :lucide-bookmark: [Documentation](https://github.com/qbittorrent/qbittorrent/wiki/)
 
     </div>
 
@@ -68,17 +68,12 @@ karolabs_media_qbittorrent_stack:
 
             - Recreate the stack with `#!yaml webui_enabled: false`
 
-    !!! note "Links"
-
-        - :lucide-bookmark: [qBittorrent wiki](https://github.com/qbittorrent/qbittorrent/wiki/)
-        - :lucide-tag: [Latest versions](https://www.qbittorrent.org/news)
-
 ??? abstract "qui - Modern web interface for qBittorrent"
 
     <div class="grid cards" markdown>
 
     - :simple-github: [autobrr/qui](https://github.com/autobrr/qui)
-    - :lucide-container: [ghcr.io/autobrr/qui](https://ghcr.io/autobrr/qui)
+    - :lucide-bookmark: [Documentation](https://getqui.com/docs/intro)
 
     </div>
 
@@ -107,8 +102,3 @@ karolabs_media_qbittorrent_stack:
             Test to ensure qBittorrent, qui and your VPN connection with Gluetun are all working correctly.
 
             - Read [TRaSH Guides - 'qBittorrent Port forwarding'](https://trash-guides.info/Downloaders/qBittorrent/Port-forwarding/)
-
-    !!! note "Links"
-
-        - :lucide-bookmark: [Documentation](https://getqui.com/docs/intro)
-        - :lucide-tag: [Releases](https://github.com/autobrr/qui/releases)
