@@ -8,3 +8,5 @@
 image:
   repository: ghcr.io/autobrr/qui
   # tag_regex: v1.0.0
+  pr_markdown: |
+    [Releases](https://github.com/autobrr/qui/releases)

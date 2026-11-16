@@ -8,3 +8,7 @@
 image:
   repository: docker.io/traefik
   # tag_regex: v1.0.0
+  pr_markdown: |
+    [Releases](https://github.com/traefik/traefik/releases)
+    [Migrations](https://doc.traefik.io/traefik/migrate/v3/)
+    [Deprecations](https://doc.traefik.io/traefik/deprecation/releases/)

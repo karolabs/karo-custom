@@ -10,3 +10,5 @@ image:
   tag_regex: '^([0-9]+\.[0-9]+)$' # 1.0
   semver:
     strict: false
+  pr_markdown: |
+    [Releases](https://github.com/jellyfin/jellyfin/releases)
