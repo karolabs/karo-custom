@@ -64,6 +64,10 @@ services:
         GET %API_PREFIX_CONTAINERS%/json
         ! inspect a container
         GET %API_PREFIX_CONTAINERS%/%CONTAINER_ID_OR_NAME%/json
+        ! inspect a network
+        GET %API_PREFIX_NETWORKS%/%NETWORK_ID_OR_NAME%
+        ! inspect a volume
+        GET %API_PREFIX_VOLUMES%/%VOLUME_ID_OR_NAME%
         ! stream container resource usage statistics
         GET %API_PREFIX_CONTAINERS%/%CONTAINER_ID_OR_NAME%/stats
         ! stream container logs
