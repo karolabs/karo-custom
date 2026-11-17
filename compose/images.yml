@@ -23,6 +23,11 @@ karolabs_ntfy_image: docker.io/binwiederhier/ntfy:v2.38.1@sha256:038da2be5e668fe
 
 karolabs_pocketid_image: docker.io/pocketid/pocket-id:v2.19.3-distroless@sha256:6a0045a89b80fa6624c091786e7be132a4dde880ca64727a6b019c056b091982
 
+karolabs_postgres15_image: dhi.io/postgres:15-alpine # until 2027-11-11
+karolabs_postgres16_image: dhi.io/postgres:16-alpine # until 2028-11-09
+karolabs_postgres17_image: dhi.io/postgres:17-alpine # until 2029-11-08
+karolabs_postgres18_image: dhi.io/postgres:18-alpine # until 2030-11-14
+
 karolabs_prowlarr_image: docker.io/linuxserver/prowlarr:2.7.0.5723-ls168@sha256:6660787a99b2e58203539583663c973b48979fc00ff2cb78dc0ea17429e1f6ef
 
 karolabs_qbittorrent_image: docker.io/qbittorrentofficial/qbittorrent-nox:5.2.3-1@sha256:9ebb534fe30bab98622cb84a8c3acecfd88319b2d540f52ecdec7b9f866374d7
