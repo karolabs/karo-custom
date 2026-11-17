@@ -13,6 +13,7 @@ services:
     image: {{ stack_vars.haproxy.image }}
     container_name: haproxy
     restart: {{ karo_compose_restart_policy }}
+    # user: 65532 by default
     ports:
       - "0.0.0.0:80:80/tcp"
       - "0.0.0.0:443:443/tcp"
@@ -23,6 +24,7 @@ services:
         source: /srv/docker/karolabs_ops/proxy/haproxy.cfg
         target: /usr/local/etc/haproxy/haproxy.cfg
         read_only: true
+    command: ["-f", "/usr/local/etc/haproxy/haproxy.cfg"]
 
 networks:
   egress_haproxy:

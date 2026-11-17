@@ -6,8 +6,8 @@
 # See https://updatecli.io for more information.
 
 image:
-  repository: docker.io/haproxy
-  tag_regex: '^([0-9]+\.[0-9]+\.[0-9]+)-alpine$' # 1.0.0-alpine
+  repository: dhi.io/haproxy
+  tag_regex: '^([0-9]+\.[0-9]+\.[0-9]+)$' # 1.0.0
   pr_markdown: |
     [Website](https://www.haproxy.org/)
     [Breaking changes](https://github.com/haproxy/wiki/wiki/breaking-changes)
