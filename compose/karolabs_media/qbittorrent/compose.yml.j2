@@ -14,14 +14,21 @@ services:
     container_name: qbittorrent
     restart: {{ karo_compose_restart_policy }}
     stop_grace_period: 30m
+    init: false # tini by default
+
+    ## security
     user: 1000:1000
     tty: false
     stdin_open: false
-    read_only: false
+    read_only: true
     security_opt:
       - no-new-privileges:true
     tmpfs:
-      - /tmp:rw,noexec,nosuid,nodev
+      - /tmp:mode=1777,noexec,nosuid,nodev
+    cap_drop:
+      - ALL
+
+    ## config
     network_mode: "container:gluetun"
     volumes:
       - type: bind
@@ -43,7 +50,21 @@ services:
     image: {{ stack_vars.qui.image }}
     container_name: qui
     restart: {{ karo_compose_restart_policy }}
+    init: true
+
+    ## security
     user: 1000:1000
+    tty: false
+    stdin_open: false
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:mode=1777,noexec,nosuid,nodev
+    cap_drop:
+      - ALL
+
+    ## config
     network_mode: "container:gluetun"
     volumes:
       - type: volume

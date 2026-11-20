@@ -13,7 +13,21 @@ services:
     image: {{ stack_vars.jellyfin.image }}
     container_name: jellyfin
     restart: {{ karo_compose_restart_policy }}
+    init: true
+
+    ## security
     user: 1000:1000
+    tty: false
+    stdin_open: false
+    read_only: true
+    tmpfs:
+      - /tmp:mode=1777,noexec,nosuid,nodev
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+    ## config
     networks:
       - egress_jellyfin
       - frontend

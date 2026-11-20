@@ -13,7 +13,22 @@ services:
     image: {{ stack_vars.radarr.image }}
     container_name: radarr
     restart: {{ karo_compose_restart_policy }}
+    init: false # s6 must be pid 1
+
+    ## security
     user: 1000:1000
+    tty: false
+    stdin_open: false
+    read_only: true
+    tmpfs:
+      - /tmp:mode=1777,noexec,nosuid,nodev
+      - /run:mode=0755,exec,nosuid,nodev,uid=1000,gid=1000 # s6 needs ownership & exec
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+    ## config
     network_mode: "container:gluetun"
     volumes:
       - type: bind
@@ -34,6 +49,7 @@ services:
 {% endif %}
     environment:
       - TZ={{ karo_compose_timezone }}
+      - S6_READ_ONLY_ROOT=1 # inform s6 of read-only root filesystem
 
 volumes:
   radarr_data:
