@@ -35,7 +35,7 @@ karo_compose_stack_groups:
     ```
 
     ``` sh
-    sudo install -d -m 0766 -o dockeruser -g dockeruser \
+    sudo install -d -m 0766 -o 166535 -g 166535 \
         ${DRIVE_MOUNT}/data \
         ${DRIVE_MOUNT}/data/media \
         ${DRIVE_MOUNT}/data/media/movies \
@@ -44,6 +44,13 @@ karo_compose_stack_groups:
         ${DRIVE_MOUNT}/data/torrents/movies \
         ${DRIVE_MOUNT}/data/torrents/series
     ```
+
+    !!! info "UID:GID"
+
+        Sonarr, Radarr and qBittorrent can only write to directories
+        owned by user `166535`. Docker remaps the container's UID of
+        1000 to the host UID `166535`. Read more
+        [here](https://docs.docker.com/engine/security/rootless/uid-gid-mapping/).
 
 ## Misc
 
