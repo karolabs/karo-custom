@@ -14,6 +14,7 @@ services:
     container_name: qbittorrent
     restart: {{ karo_compose_restart_policy }}
     stop_grace_period: 30m
+    user: 1000:1000
     tty: false
     stdin_open: false
     read_only: false
@@ -35,8 +36,6 @@ services:
       - traefik.http.services.qbittorrent.loadbalancer.server.port=9814
     environment:
       - TZ={{ karo_compose_timezone }}
-      - PUID=0
-      - PGID=0
       - QBT_LEGAL_NOTICE=confirm
       - QBT_WEBUI_PORT=9814
 
@@ -44,6 +43,7 @@ services:
     image: {{ stack_vars.qui.image }}
     container_name: qui
     restart: {{ karo_compose_restart_policy }}
+    user: 1000:1000
     network_mode: "container:gluetun"
     volumes:
       - type: volume
@@ -54,8 +54,6 @@ services:
       - traefik.http.routers.qui.rule=Host(`{{ stack_vars.qui.domain }}`)
       - traefik.http.services.qui.loadbalancer.server.port=7476
     environment:
-      - PUID=0
-      - PGID=0
       - QUI__LOG_LEVEL={{ stack_vars.qui.log_level | upper }}
       - QUI__SESSION_SECRET_FILE=/run/secrets/qui_session_secret
       - QUI__OIDC_ENABLED=true

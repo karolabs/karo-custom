@@ -13,6 +13,7 @@ services:
     image: {{ stack_vars.sonarr.image }}
     container_name: sonarr
     restart: {{ karo_compose_restart_policy }}
+    user: 1000:1000
     network_mode: "container:gluetun"
     volumes:
       - type: bind
@@ -33,8 +34,6 @@ services:
 {% endif %}
     environment:
       - TZ={{ karo_compose_timezone }}
-      - PUID=0
-      - PGID=0
 
 volumes:
   sonarr_data:

@@ -13,6 +13,7 @@ services:
     image: {{ stack_vars.jellyfin.image }}
     container_name: jellyfin
     restart: {{ karo_compose_restart_policy }}
+    user: 1000:1000
     networks:
       - egress_jellyfin
       - frontend

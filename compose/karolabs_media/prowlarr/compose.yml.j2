@@ -13,6 +13,7 @@ services:
     image: {{ stack_vars.prowlarr.image }}
     container_name: prowlarr
     restart: {{ karo_compose_restart_policy }}
+    user: 1000:1000
     network_mode: "container:gluetun"
     volumes:
       - type: volume
@@ -30,8 +31,6 @@ services:
 {% endif %}
     environment:
       - TZ={{ karo_compose_timezone }}
-      - PUID=1000
-      - PGID=1000
 
 volumes:
   prowlarr_data:
