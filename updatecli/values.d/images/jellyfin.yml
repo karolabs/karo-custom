@@ -12,3 +12,4 @@ image:
     strict: false
   pr_markdown: |
     [Releases](https://github.com/jellyfin/jellyfin/releases)
+    [Registry](https://hub.docker.com/r/jellyfin/jellyfin)

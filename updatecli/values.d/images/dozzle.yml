@@ -10,3 +10,4 @@ image:
   tag_regex: '^v([0-9]+\.[0-9]+\.[0-9]+)-alpine$' # v1.0.0-alpine
   pr_markdown: |
     [Releases](https://github.com/amir20/dozzle/releases)
+    [Registry](https://hub.docker.com/r/amir20/dozzle)

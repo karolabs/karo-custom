@@ -7,62 +7,41 @@
 
 # ---
 
-# https://hub.docker.com/r/hectorm/cetusguard
 karolabs_cetusguard_image: docker.io/hectorm/cetusguard:v1.2.0@sha256:c8804639d538d422a284bb61e65fc33c6135a3084e8dcc7958680fef5aa63543
 
-# https://hub.docker.com/r/amir20/dozzle
 karolabs_dozzle_image: docker.io/amir20/dozzle:v11.4.3-alpine@sha256:9c6769f2ee3f93b61243e4e6ee2a6a8721f14ed1b0c05588bd7adfaaf9bd545c
 
-# https://hub.docker.com/r/qmcgaw/gluetun
 karolabs_gluetun_image: docker.io/qmcgaw/gluetun:v3.41.3@sha256:fa19cc76b2af13d57a8d3dc3066f2ada061b1c761b8aecf989b3877c0486e027
 
-# https://hub.docker.com/r/timothyye/godns
 karolabs_godns_image: docker.io/timothyye/godns:v3.4.6@sha256:c11217b895b82d999e1d0d5463710fa9687f933182b5f169af6ab1cf5c715879
 
-# https://hub.docker.com/hardened-images/catalog/dhi/haproxy
-# https://www.haproxy.org
 karolabs_haproxy_image: dhi.io/haproxy:3.4.7@sha256:5acc3cf3e12baa4c8c0901c69866ea9f5524d1809dc136438b202f4b0603e0fa
 
-# https://hub.docker.com/r/jellyfin/jellyfin
 karolabs_jellyfin_image: docker.io/jellyfin/jellyfin:12.4@sha256:fea863d0cd9ec445985d9c75fc6ed64e38a1d2766cf0c250a33d553f4fc1b771
 
-# https://hub.docker.com/r/binwiederhier/ntfy
 karolabs_ntfy_image: docker.io/binwiederhier/ntfy:v2.38.1@sha256:038da2be5e668fee6d36a62884eea48975e1b71c29a56964e5298c1b9165a573
 
-# https://hub.docker.com/r/pocketid/pocket-id
 karolabs_pocketid_image: docker.io/pocketid/pocket-id:v2.19.3-distroless@sha256:6a0045a89b80fa6624c091786e7be132a4dde880ca64727a6b019c056b091982
 
-# https://hub.docker.com/hardened-images/catalog/dhi/postgres
-# https://www.postgresql.org/support/versioning
 karolabs_postgres15_image: dhi.io/postgres:15-alpine # until 2027-11-11
 karolabs_postgres16_image: dhi.io/postgres:16-alpine # until 2028-11-09
 karolabs_postgres17_image: dhi.io/postgres:17-alpine # until 2029-11-08
 karolabs_postgres18_image: dhi.io/postgres:18-alpine # until 2030-11-14
 
-# https://hub.docker.com/r/linuxserver/prowlarr
 karolabs_prowlarr_image: docker.io/linuxserver/prowlarr:2.7.0.5723-ls168@sha256:6660787a99b2e58203539583663c973b48979fc00ff2cb78dc0ea17429e1f6ef
 
-# https://hub.docker.com/r/qbittorrentofficial/qbittorrent-nox
 karolabs_qbittorrent_image: docker.io/qbittorrentofficial/qbittorrent-nox:5.2.3-1@sha256:9ebb534fe30bab98622cb84a8c3acecfd88319b2d540f52ecdec7b9f866374d7
 
-# https://ghcr.io/autobrr/qui
 karolabs_qui_image: ghcr.io/autobrr/qui:v1.35.0@sha256:a5b2f5faf6388cce257137c88e4b189458fd799cf9119ed476c980e5a69341b2
 
-# https://hub.docker.com/r/linuxserver/radarr
 karolabs_radarr_image: docker.io/linuxserver/radarr:6.4.4.10685-ls326@sha256:51a9ac2a9eb47afc833541e5fd6c11b86eb9f810694c22fa2429e3078e9194b2
 
-# https://hub.docker.com/r/seerr/seerr
 karolabs_seerr_image: docker.io/seerr/seerr:preview-new-oidc@sha256:2b714a6d17590b554d388d70adc6c4ea6507d9367c23eb42e4319693b55aa054
 
-# https://hub.docker.com/r/linuxserver/sonarr
 karolabs_sonarr_image: docker.io/linuxserver/sonarr:4.0.20.3014-ls5@sha256:c7d1df25e428da6c9ace05daea0d34e59522978a3843ea1944812f855af4086c
 
-# https://ghcr.io/tinyauthapp/tinyauth
 karolabs_tinyauth_image: ghcr.io/tinyauthapp/tinyauth:v5.2.0-distroless@sha256:aff752a57511f9346109b4d427c132db71dfa480138698e1f42feaf335f7cda9
 
-# https://hub.docker.com/hardened-images/catalog/dhi/traefik
-# https://doc.traefik.io/traefik/deprecation/releases
 karolabs_traefik_image: dhi.io/traefik:3.7.19-alpine@sha256:71d16ea92a422c3f0a97483e4105dc8775a84371a6b80f66eade6b6d403b1640
 
-# https://hub.docker.com/r/traefik/whoami
 karolabs_whoami_image: docker.io/traefik/whoami:v1.12.0@sha256:c4717a8d1f0134a7444e24f881160e033991f23027c6c5a9a3f8fd22e70d1d44

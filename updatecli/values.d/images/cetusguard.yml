@@ -10,3 +10,4 @@ image:
   # tag_regex: v1.0.0
   pr_markdown: |
     [Releases](https://github.com/hectorm/cetusguard/releases)
+    [Registry](https://hub.docker.com/r/hectorm/cetusguard)
