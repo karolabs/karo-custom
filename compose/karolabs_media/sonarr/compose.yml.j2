@@ -42,7 +42,7 @@ services:
       - traefik.http.routers.sonarr.rule=Host(`{{ stack_vars.sonarr.domain }}`)
       - traefik.http.services.sonarr.loadbalancer.server.port=8989
 {% if stack_vars.sonarr.forward_auth_enabled %}
-      # forward auth
+      ## forward auth
       - traefik.http.routers.sonarr.middlewares=tinyauth
       - tinyauth.apps.sonarr.config.domain={{ stack_vars.sonarr.domain }}
       - tinyauth.apps.sonarr.oauth.groups={{ karo_compose_oidc_admin_group }}

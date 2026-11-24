@@ -40,7 +40,7 @@ services:
       - traefik.http.routers.dashboard.service=api@internal
       - traefik.http.services.dashboard.loadbalancer.server.port=8080
 {% if stack_vars.traefik.dashboard_forward_auth_enabled %}
-      # forward auth
+      ## forward auth
       - traefik.http.routers.dashboard.middlewares=tinyauth
       - tinyauth.apps.dashboard.config.domain={{ stack_vars.traefik.dashboard_domain }}
       - tinyauth.apps.dashboard.oauth.groups={{ karo_compose_oidc_admin_group }}

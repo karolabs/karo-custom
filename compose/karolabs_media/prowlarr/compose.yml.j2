@@ -39,7 +39,7 @@ services:
       - traefik.http.routers.prowlarr.rule=Host(`{{ stack_vars.prowlarr.domain }}`)
       - traefik.http.services.prowlarr.loadbalancer.server.port=9696
 {% if stack_vars.prowlarr.forward_auth_enabled %}
-      # forward auth
+      ## forward auth
       - traefik.http.routers.prowlarr.middlewares=tinyauth
       - tinyauth.apps.prowlarr.config.domain={{ stack_vars.prowlarr.domain }}
       - tinyauth.apps.prowlarr.oauth.groups={{ karo_compose_oidc_admin_group }}
