@@ -10,4 +10,5 @@ image:
   # tag_regex: v1.0.0
   pr_markdown: |
     [Releases](https://github.com/seerr-team/seerr/releases)
+    [Dockerfile](https://github.com/seerr-team/seerr/blob/main/Dockerfile)
     [Registry](https://hub.docker.com/r/seerr/seerr)

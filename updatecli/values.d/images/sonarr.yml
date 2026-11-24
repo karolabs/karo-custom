@@ -10,4 +10,5 @@ image:
   tag_regex: '^([0-9]+\.[0-9]+\.[0-9]+)\.[0-9]+-ls[0-9]+$' # 1.0.0.0-ls0
   pr_markdown: |
     [Releases](https://github.com/sonarr/sonarr/releases)
+    [Dockerfile](https://github.com/linuxserver/docker-sonarr/blob/master/Dockerfile)
     [Registry](https://hub.docker.com/r/linuxserver/sonarr)

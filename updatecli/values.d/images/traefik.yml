@@ -11,4 +11,5 @@ image:
   pr_markdown: |
     [Releases](https://github.com/traefik/traefik/releases)
     [Migrations](https://doc.traefik.io/traefik/migrate/v3/)
+    [Dockerfile](https://github.com/docker-hardened-images/catalog/tree/main/image/traefik)
     [Registry](https://hub.docker.com/hardened-images/catalog/dhi/traefik)

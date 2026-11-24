@@ -10,4 +10,5 @@ image:
   # tag_regex: v1.0.0
   pr_markdown: |
     [Releases](https://github.com/timothyye/godns/releases)
+    [Dockerfile](https://github.com/TimothyYe/godns/blob/master/Dockerfile)
     [Registry](https://hub.docker.com/r/timothyye/godns)

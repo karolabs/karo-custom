@@ -11,4 +11,5 @@ image:
   pr_markdown: |
     [Website](https://www.haproxy.org/)
     [Breaking changes](https://github.com/haproxy/wiki/wiki/breaking-changes)
+    [Dockerfile](https://github.com/docker-hardened-images/catalog/tree/main/image/haproxy)
     [Registry](https://hub.docker.com/hardened-images/catalog/dhi/haproxy)

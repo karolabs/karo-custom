@@ -10,4 +10,5 @@ image:
   # tag_regex: v1.0.0
   pr_markdown: |
     [Releases](https://github.com/passteque/gluetun/releases)
+    [Dockerfile](https://github.com/passteque/gluetun/blob/master/Dockerfile)
     [Registry](https://hub.docker.com/r/qmcgaw/gluetun)

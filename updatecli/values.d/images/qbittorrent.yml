@@ -11,4 +11,5 @@ image:
   pr_markdown: |
     [Website](https://www.qbittorrent.org/news)
     [Commits](https://github.com/qbittorrent/docker-qbittorrent-nox/commits/main/)
+    [Dockerfile](https://github.com/qbittorrent/docker-qbittorrent-nox/blob/main/Dockerfile)
     [Registry](https://hub.docker.com/r/qbittorrentofficial/qbittorrent-nox)
