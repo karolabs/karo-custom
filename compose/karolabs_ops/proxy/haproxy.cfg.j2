@@ -27,14 +27,14 @@ defaults
   timeout tunnel  1h
 
 frontend http
-  bind *:80
+  bind *:8080 # (80)
   mode http
 
   # https redirect
   http-request redirect scheme https code 301 if !{ ssl_fc }
 
 frontend https
-  bind *:443
+  bind *:8443 # (443)
   mode tcp
 
   {{ stack_vars.haproxy.config_raw }}

@@ -13,10 +13,24 @@ services:
     image: {{ stack_vars.haproxy.image }}
     container_name: haproxy
     restart: {{ karo_compose_restart_policy }}
-    # user: 65532 by default
+    init: true
+
+    ## security
+    # user: 65532:65532 by default
+    tty: false
+    stdin_open: false
+    read_only: true
+    tmpfs:
+      - /tmp:mode=1777,noexec,nosuid,nodev
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+    ## config
     ports:
-      - "0.0.0.0:80:80/tcp"
-      - "0.0.0.0:443:443/tcp"
+      - "0.0.0.0:80:8080/tcp"
+      - "0.0.0.0:443:8443/tcp"
     networks:
       - egress_haproxy
     volumes:
