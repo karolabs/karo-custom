@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: © 2026 hazzuk
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# An `updatecli` values file, for defining generic values.
+# See https://updatecli.io for more information.
+
+image:
+  repository: docker.io/seerr/seerr
+  # tag_regex: v1.0.0
+  pr_markdown: |
+    [Releases](https://github.com/seerr-team/seerr/releases)
+    [Registry](https://hub.docker.com/r/seerr/seerr)
