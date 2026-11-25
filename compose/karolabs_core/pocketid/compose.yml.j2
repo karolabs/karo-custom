@@ -13,8 +13,17 @@ services:
     image: {{ stack_vars.pocketid.image }}
     container_name: pocketid
     restart: {{ karo_compose_restart_policy }}
+    init: true
+
+    ## security
     user: 1000:1000
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
     read_only: true
+    # tmpfs: []
+
+    ## config
     networks:
       - egress_pocketid
       - frontend
@@ -37,12 +46,7 @@ services:
     secrets:
       - pocketid_encryption_key
       - pocketid_maxmind_license_key
-    healthcheck:
-      test: [ "CMD", "/app/pocket-id", "healthcheck" ]
-      interval: 1m30s
-      timeout: 5s
-      retries: 2
-      start_period: 10s
+    # healthcheck: defined by image
 
 networks:
   egress_pocketid:
