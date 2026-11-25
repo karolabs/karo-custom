@@ -17,13 +17,11 @@ services:
 
     ## security
     # user: 65532:65532 by default
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
     read_only: true
-    tmpfs:
-      - /tmp:mode=1777,noexec,nosuid,nodev
-    security_opt:
-      - no-new-privileges:true
-    cap_drop:
-      - ALL
+    # tmpfs: []
 
     ## config
     command: ["-f", "/usr/local/etc/haproxy/haproxy.cfg"]
