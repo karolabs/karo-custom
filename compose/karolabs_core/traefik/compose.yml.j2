@@ -14,9 +14,18 @@ services:
     image: {{ stack_vars.traefik.image }}
     container_name: traefik
     restart: {{ karo_compose_restart_policy }}
-    # user: 65532 by default
-    security_opt:
-      - no-new-privileges:true
+    init: true
+
+    ## security
+    # user: 65532:65532 by default
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    cap_add:
+      - NET_BIND_SERVICE
+    read_only: true
+    # tmpfs: []
+
+    ## config
     ports:
       - "0.0.0.0:80:80/tcp"
       - "0.0.0.0:443:443/tcp"
@@ -61,10 +70,17 @@ services:
     image: {{ stack_vars.tinyauth.image }}
     container_name: tinyauth
     restart: {{ karo_compose_restart_policy }}
-    # user: 1000:1000 # unsupported
-    # read_only: true # write secrets
-    security_opt:
-      - no-new-privileges:true
+    init: true
+
+    ## security
+    user: 1000:1000
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
+    read_only: true
+    # tmpfs: []
+
+    ## config
     networks:
       socketproxy_traefik:
       frontend:
@@ -109,7 +125,17 @@ services:
     image: {{ stack_vars.cetusguard.image }}
     container_name: cetusguard_traefik
     restart: {{ karo_compose_restart_policy }}
+    init: true
+
+    ## security
+    user: 1000:990 # GID of docker.sock
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
     read_only: true
+    # tmpfs: []
+
+    ## config
     networks:
       - socketproxy_traefik
     volumes:
