@@ -21,7 +21,7 @@ karolabs_godns_image: docker.io/timothyye/godns:v3.4.6@sha256:c11217b895b82d999e
 
 # https://hub.docker.com/hardened-images/catalog/dhi/haproxy
 # https://www.haproxy.org
-karolabs_haproxy_image: dhi.io/haproxy:3.4.8@sha256:f88d5e66007e71c8d33f0426837e91f6636c4a3fa341e7c272b7111184dc4e56
+karolabs_haproxy_image: dhi.io/haproxy:3.4.8@sha256:350bc9af524229301a83878eecd3e4916dc7211d84ed1b11bf394f6aced09177
 
 # https://hub.docker.com/r/jellyfin/jellyfin
 karolabs_jellyfin_image: docker.io/jellyfin/jellyfin:12.4@sha256:fea863d0cd9ec445985d9c75fc6ed64e38a1d2766cf0c250a33d553f4fc1b771
