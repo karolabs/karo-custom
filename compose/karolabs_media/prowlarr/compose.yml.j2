@@ -22,7 +22,6 @@ services:
     # cap_add: []
     read_only: true
     tmpfs:
-      - /tmp:mode=1777,noexec,nosuid,nodev
       - /run:mode=0755,exec,nosuid,nodev,uid=1000,gid=1000 # s6 needs ownership & exec
 
     ## config

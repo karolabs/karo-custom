@@ -22,8 +22,7 @@ services:
     cap_drop: ["ALL"]
     # cap_add: []
     read_only: true
-    tmpfs:
-      - /tmp:mode=1777,noexec,nosuid,nodev
+    # tmpfs: []
 
     ## config
     network_mode: "container:gluetun"
@@ -55,8 +54,7 @@ services:
     cap_drop: ["ALL"]
     # cap_add: []
     read_only: true
-    tmpfs:
-      - /tmp:mode=1777,noexec,nosuid,nodev
+    # tmpfs: []
 
     ## config
     network_mode: "container:gluetun"
