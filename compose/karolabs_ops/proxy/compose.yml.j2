@@ -17,8 +17,6 @@ services:
 
     ## security
     # user: 65532:65532 by default
-    tty: false
-    stdin_open: false
     read_only: true
     tmpfs:
       - /tmp:mode=1777,noexec,nosuid,nodev
