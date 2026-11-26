@@ -25,6 +25,9 @@ karolabs_core = [
   "traefik",
   "pocketid",
 ]
+karolabs_extra = [
+  "kaneo",
+]
 karolabs_media = [
   "gluetun",
   "qbittorrent",

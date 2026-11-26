@@ -39,6 +39,7 @@ maintained by the karo-stack project.
     ``` yaml { title="Ansible vault" }
     karo_compose_stack_groups:
       - karolabs_core
+      - karolabs_extra
       - karolabs_media
       - karolabs_ops
     ```

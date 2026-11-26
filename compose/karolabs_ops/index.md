@@ -11,9 +11,10 @@ weight: 3
 
 Operations and monitoring services.
 
-``` yaml { .no-copy hl_lines="4" }
+``` yaml { .no-copy hl_lines="5" }
 karo_compose_stack_groups:
   - karolabs_core # setup first
+  - karolabs_extra
   - karolabs_media
   - karolabs_ops # order last in list
 ```

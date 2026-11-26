@@ -11,9 +11,10 @@ weight: 2
 
 Full set of media services, for downloads, content organisation, user requests, and streaming.
 
-``` yaml { .no-copy hl_lines="3" }
+``` yaml { .no-copy hl_lines="4" }
 karo_compose_stack_groups:
   - karolabs_core # setup first
+  - karolabs_extra
   - karolabs_media
   - karolabs_ops
 ```
