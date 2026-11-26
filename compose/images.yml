@@ -23,10 +23,13 @@ karolabs_ntfy_image: docker.io/binwiederhier/ntfy:v2.38.1@sha256:038da2be5e668fe
 
 karolabs_pocketid_image: docker.io/pocketid/pocket-id:v2.19.3-distroless@sha256:6a0045a89b80fa6624c091786e7be132a4dde880ca64727a6b019c056b091982
 
-karolabs_postgres15_image: dhi.io/postgres:15-alpine # until 2027-11-11
-karolabs_postgres16_image: dhi.io/postgres:16-alpine # until 2028-11-09
-karolabs_postgres17_image: dhi.io/postgres:17-alpine # until 2029-11-08
-karolabs_postgres18_image: dhi.io/postgres:18-alpine # until 2030-11-14
+karolabs_postgres15_image: dhi.io/postgres:15.20-alpine@sha256:ebbb7c005b2320878fcf962131b0ffd34887913a2c94cf8721b5ee415e0e9092
+
+karolabs_postgres16_image: dhi.io/postgres:16.16-alpine@sha256:a7e446f813623e776304e925f65586e2ee035c127447b15a771df671bc4254a9
+
+karolabs_postgres17_image: dhi.io/postgres:17.12-alpine@sha256:1e2cf4659236c0f90db6432f43b1e5308fe63f014422d8738af11d47c5fc881d
+
+karolabs_postgres18_image: dhi.io/postgres:18.7-alpine@sha256:3691ea7e99b6b0a0e5a576a97dfcd759fecf3638c4352fd8aba1a5502e369261
 
 karolabs_prowlarr_image: docker.io/linuxserver/prowlarr:2.7.0.5723-ls168@sha256:6660787a99b2e58203539583663c973b48979fc00ff2cb78dc0ea17429e1f6ef
 
