@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: © 2026 hazzuk
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# An `updatecli` values file, for defining generic values.
+# See https://updatecli.io for more information.
+
+image:
+  repository: dhi.io/postgres
+  tag_regex: '^([0-9]+\.[0-9]+\.[0-9]+)-alpine$' # 1.0.0-alpine
+  semver:
+    pattern: '^16'
+  pr_markdown: |
+    [Releases](https://www.postgresql.org/docs/release/)
+    [Versioning](https://www.postgresql.org/support/versioning/)
+    [Dockerfile](https://github.com/docker-hardened-images/catalog/tree/main/image/postgres)
+    [Registry](https://hub.docker.com/hardened-images/catalog/dhi/postgres)
