@@ -13,6 +13,17 @@ services:
     image: {{ stack_vars.dozzle.image }}
     container_name: dozzle
     restart: {{ karo_compose_restart_policy }}
+    init: true
+
+    ## security
+    user: 1000:1000
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
+    read_only: true
+    # tmpfs: []
+
+    ## config
     networks:
       - socketproxy_dozzle
       - frontend
@@ -46,7 +57,17 @@ services:
     image: {{ stack_vars.cetusguard.image }}
     container_name: cetusguard_dozzle
     restart: {{ karo_compose_restart_policy }}
+    init: true
+
+    ## security
+    user: 1000:990 # GID of docker.sock
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
     read_only: true
+    # tmpfs: []
+
+    ## config
     networks:
       - socketproxy_dozzle
     volumes:

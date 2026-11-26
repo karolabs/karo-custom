@@ -13,22 +13,36 @@ services:
     image: {{ stack_vars.whoami.image }}
     container_name: whoami
     restart: {{ karo_compose_restart_policy }}
+    init: true
+
+    ## security
+    user: 1000:1000
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
+    read_only: true
+    # tmpfs: []
+
+    ## config
     networks:
       - frontend
     labels:
       - traefik.enable=true
       - traefik.http.routers.whoami.rule=Host(`{{ stack_vars.whoami.domain }}`)
+      - traefik.http.services.whoami.loadbalancer.server.port=8080
+      ## redundant traefik labels
       # - traefik.http.routers.whoami.tls=true
       # - traefik.http.routers.whoami.tls.certresolver=cloudflare
       # - traefik.http.routers.dashboard.entrypoints=websecure
-      - traefik.http.services.whoami.loadbalancer.server.port=80
 {% if stack_vars.whoami.forward_auth_enabled %}
-      # forward auth
+      ## forward auth
       - traefik.http.routers.whoami.middlewares=tinyauth
       - tinyauth.apps.whoami.config.domain={{ stack_vars.whoami.domain }}
       - tinyauth.apps.whoami.oauth.groups={{ karo_compose_oidc_admin_group }}
       - tinyauth.apps.whoami.path.allow=^\/api
 {% endif %}
+    environment:
+      - WHOAMI_PORT_NUMBER=8080
 
 networks:
   frontend:

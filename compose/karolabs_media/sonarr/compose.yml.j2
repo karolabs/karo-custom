@@ -17,16 +17,12 @@ services:
 
     ## security
     user: 1000:1000
-    tty: false
-    stdin_open: false
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
     read_only: true
     tmpfs:
-      - /tmp:mode=1777,noexec,nosuid,nodev
       - /run:mode=0755,exec,nosuid,nodev,uid=1000,gid=1000 # s6 needs ownership & exec
-    security_opt:
-      - no-new-privileges:true
-    cap_drop:
-      - ALL
 
     ## config
     network_mode: "container:gluetun"
@@ -42,7 +38,7 @@ services:
       - traefik.http.routers.sonarr.rule=Host(`{{ stack_vars.sonarr.domain }}`)
       - traefik.http.services.sonarr.loadbalancer.server.port=8989
 {% if stack_vars.sonarr.forward_auth_enabled %}
-      # forward auth
+      ## forward auth
       - traefik.http.routers.sonarr.middlewares=tinyauth
       - tinyauth.apps.sonarr.config.domain={{ stack_vars.sonarr.domain }}
       - tinyauth.apps.sonarr.oauth.groups={{ karo_compose_oidc_admin_group }}

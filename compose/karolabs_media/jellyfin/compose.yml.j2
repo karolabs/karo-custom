@@ -17,15 +17,12 @@ services:
 
     ## security
     user: 1000:1000
-    tty: false
-    stdin_open: false
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
     read_only: true
     tmpfs:
       - /tmp:mode=1777,noexec,nosuid,nodev
-    security_opt:
-      - no-new-privileges:true
-    cap_drop:
-      - ALL
 
     ## config
     networks:

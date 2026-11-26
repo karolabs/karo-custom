@@ -13,6 +13,17 @@ services:
     image: {{ stack_vars.godns.image }}
     container_name: godns
     restart: {{ karo_compose_restart_policy }}
+    init: true
+
+    ## security
+    user: 1000:1000
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
+    read_only: true
+    # tmpfs: []
+
+    ## config
     networks:
       - egress_godns
     volumes:

@@ -13,10 +13,21 @@ services:
     image: {{ stack_vars.haproxy.image }}
     container_name: haproxy
     restart: {{ karo_compose_restart_policy }}
-    # user: 65532 by default
+    init: true
+
+    ## security
+    # user: 65532:65532 by default
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
+    read_only: true
+    # tmpfs: []
+
+    ## config
+    command: ["-f", "/usr/local/etc/haproxy/haproxy.cfg"]
     ports:
-      - "0.0.0.0:80:80/tcp"
-      - "0.0.0.0:443:443/tcp"
+      - "0.0.0.0:80:8080/tcp"
+      - "0.0.0.0:443:8443/tcp"
     networks:
       - egress_haproxy
     volumes:
@@ -24,7 +35,6 @@ services:
         source: /srv/docker/karolabs_ops/proxy/haproxy.cfg
         target: /usr/local/etc/haproxy/haproxy.cfg
         read_only: true
-    command: ["-f", "/usr/local/etc/haproxy/haproxy.cfg"]
 
 networks:
   egress_haproxy:

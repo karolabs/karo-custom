@@ -18,15 +18,11 @@ services:
 
     ## security
     user: 1000:1000
-    tty: false
-    stdin_open: false
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
     read_only: true
-    security_opt:
-      - no-new-privileges:true
-    tmpfs:
-      - /tmp:mode=1777,noexec,nosuid,nodev
-    cap_drop:
-      - ALL
+    # tmpfs: []
 
     ## config
     network_mode: "container:gluetun"
@@ -54,15 +50,11 @@ services:
 
     ## security
     user: 1000:1000
-    tty: false
-    stdin_open: false
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
     read_only: true
-    security_opt:
-      - no-new-privileges:true
-    tmpfs:
-      - /tmp:mode=1777,noexec,nosuid,nodev
-    cap_drop:
-      - ALL
+    # tmpfs: []
 
     ## config
     network_mode: "container:gluetun"
