@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: © 2026 hazzuk
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# karo-custom stack defaults, for specifying Docker Compose stack variables.
+# See https://docs.karolabs.dev for more information.
+
+---
+
+karolabs_extra_kaneo_enabled: false
+
+karolabs_extra_kaneo_stack_defaults: # -8<- [start:docs]
+  kaneo:
+    image: "{{ karolabs_kaneo_image }}"
+    domain: "kaneo.{{ karo_compose_root_domain }}"
+    log_level: info # debug, info, warn, error
+    oidc_client_id: ""
+    secrets:
+      oidc_client_secret: ""
+      auth_secret: "" # `openssl rand -hex 16`
+      notification_secret: "" # `openssl rand -hex 16`
+  postgres:
+    secrets:
+      password: "" # `openssl rand -hex 16`

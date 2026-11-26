@@ -1,0 +1,107 @@
+# SPDX-FileCopyrightText: © 2026 hazzuk
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+# karo-custom stack template, for rendering files used by Docker Compose.
+# See https://docs.karolabs.dev for more information.
+
+{{ ansible_managed | comment }}
+
+---
+
+name: kaneo
+services:
+
+  kaneo:
+    image: {{ stack_vars.kaneo.image }}
+    container_name: kaneo
+    restart: {{ karo_compose_restart_policy }}
+    init: true
+
+    ## security
+    user: 1000:1000
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
+    read_only: true
+    tmpfs:
+      - /var/lib/kaneo:uid=1000,gid=1000,mode=0770,noexec,nosuid,nodev
+
+    ## config
+    networks:
+      - internal_kaneo
+      - frontend
+    extra_hosts:
+      - "{{ karo_compose_oidc_domain }}:172.18.0.254"
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.kaneo.rule=Host(`{{ stack_vars.kaneo.domain }}`)
+      - traefik.http.services.kaneo.loadbalancer.server.port=5173
+    env_file:
+      - .env.kaneo
+      - .env.postgres
+    secrets:
+      - kaneo_auth_secret
+      - kaneo_notification_secret
+      - kaneo_oidc_client_secret
+      - postgres_password
+    # healthcheck: defined by image
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  postgres:
+    image: {{ karolabs_postgres18_image }}
+    container_name: postgres_kaneo
+    restart: {{ karo_compose_restart_policy }}
+    stop_grace_period: 30s
+    init: true
+
+    ## security
+    # user: 70:70 by default
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+    # cap_add: []
+    read_only: true
+    tmpfs:
+      - /run/postgresql:uid=70,gid=70,mode=0755,noexec,nosuid,nodev
+
+    ## config
+    shm_size: 256mb
+    networks:
+      - internal_kaneo
+    volumes:
+      - type: volume
+        source: kaneo_db
+        target: /var/lib/postgresql
+    env_file:
+      - .env.postgres
+    secrets:
+      - postgres_password
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER}", "-d", "${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  internal_kaneo:
+    name: internal_kaneo
+    driver: bridge
+    internal: true
+  frontend:
+    external: true
+
+volumes:
+  kaneo_db:
+    name: kaneo_db
+
+secrets:
+  kaneo_auth_secret:
+    file: {{ karo_compose_secrets_path }}/kaneo_auth_secret
+  kaneo_notification_secret:
+    file: {{ karo_compose_secrets_path }}/kaneo_notification_secret
+  kaneo_oidc_client_secret:
+    file: {{ karo_compose_secrets_path }}/kaneo_oidc_client_secret
+  postgres_password:
+    file: {{ karo_compose_secrets_path }}/postgres_password

@@ -26,6 +26,7 @@ karolabs_core = [
   "pocketid",
 ]
 karolabs_extra = [
+  "kaneo",
 ]
 karolabs_media = [
   "gluetun",
